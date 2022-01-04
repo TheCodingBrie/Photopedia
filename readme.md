@@ -1,5 +1,48 @@
 Photo app
 
+# Tasks
+
+## Kate
+    - Navbar
+    - Social medias
+    - Contact
+    
+## Fran
+    - Search bar
+    - Photo type
+    - Language thing
+    - Full Image Gallery
+    
+## Guillaume
+    - Server + api
+    - About us
+    - Locations (leaflet) (full map)
+    - api functions:
+        - Random image from all database
+        - Pull all images from database
+        - Pull locations for a specific type of photo
+        - Pull all locations from the database
+        - Pull all photos of a specific location for a type
+        - 
+    
+<IntroPage />    
+    <App /> (empty)
+        <NavBar />
+        <Photo type /> (Map and/or by tag?)
+            <sub elements for specific locations />
+        <Locations />
+        <FullImageGallery />
+        <About Us />
+        <Contact />
+        <Social /> (footer)
+        
+        
+        
+        #####Extra features
+        <AddLocation />
+        <AddPhoto />
+        <LocationImageGallery />
+
 - data about geographical location with description sorted by location and by type of photography
     - Landscape
     - Astrophotography
@@ -24,15 +67,7 @@ Technology:
     - Node
     - MongoDB or PostGres
 
-<IntroPage />    
-    <LandingPage /> 
-        <NavBar />
-        <MainContent /> (Map and/or by tag?)
-        <SpecificLocation />
-            <ImageGallery />
-        <FullImageGallery />
-        <AddLocation />
-        <AddPhoto />
+
 
 
 <Navbar />
