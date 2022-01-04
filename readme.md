@@ -18,7 +18,7 @@ Photo app
     - About us
     - Locations (leaflet) (full map)
     - api functions:
-        - Random image from all database
+        - Pull Random image from all database
         - Pull all images from database
         - Pull locations for a specific type of photo
         - Pull all locations from the database
