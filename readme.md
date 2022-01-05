@@ -23,7 +23,10 @@ Photo app
         - Pull locations for a specific type of photo
         - Pull all locations from the database
         - Pull all photos of a specific location for a type
-        - 
+        -
+        
+ ## Derek
+    
     
 <IntroPage />    
     <App /> (empty)
