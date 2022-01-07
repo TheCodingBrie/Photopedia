@@ -52,6 +52,7 @@ body {
 .left_content img {
   width: 257px;
   height: 150px;
+  margin-top: 10px;
 }
 
 .right_content .search {
