@@ -1,0 +1,80 @@
+body {
+  width: 100%;
+  height: auto;
+}
+
+/* @media(max-width: 800px){
+    body {
+        display: flex;
+        align-items: center;
+    }
+} */
+@font-face {
+  font-family: "Perpetua Titling MT Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Perpetua Titling MT"), format("ttf");
+}
+
+.photo_types_box {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .photo_types_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .left_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+}
+
+.left_content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left_content img {
+  width: 257px;
+  height: 150px;
+}
+
+.right_content .search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 180px;
+  
+}
+
+@media (max-width: 800px) {
+  .right_content .search {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    
+  }
+}
+
+
+
+
+
+/* .search_and_cards {
+  display: flex;
+  justify-content: center;
+} */
