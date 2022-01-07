@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* display: flex; */
+  /* flex-direction: row; 
+  justify-content: flex-end;
+  /* align-items: center;
+  align-content: center; */ 
+  flex-wrap: wrap;
+  background: #EEEEF5;
+}
+
+
+.where_to {
+  font-size: 6vw;
+  line-height: 8vw;
+  margin: 0;
+  font-family: 'Perpetua Titling MT Light', sans-serif;
+  font-weight: 2000;
+  background-image: url('./images/Westhavelland_2.jpg');
+  background-size: 20%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0.08);
+  animation: zoomout 10s ease 500ms forwards;
+}
+
+.where_to h1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
