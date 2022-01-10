@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -11,35 +12,43 @@ import HeaderAnimation from './components/HeaderAnimation'
 import LogoPhotopedia from './components/LogoPhotopedia';
 
 
+=======
+import * as React from "react"
+import Box from "@mui/material/Box"
+import Button from "@mui/material/Button"
+import Astrophoto from "./images/astrophotography_300X400.png"
+import Landscape from "./images/landscape_300X400.png"
+import Architecture from "./images/architecture_300X400.png"
+import Wildlife from "./images/wildlife_300X400.png"
+import Search from "./Search"
+import "./Home.css"
+import HeaderAnimation from "./HeaderAnimation"
+>>>>>>> c1a9b28bbf4383042704f3e6f0f8efd0277a6a5e
 
 function BoxComponent() {
-  
   return (
-      <>
-
+    <>
       <div className="left_content">
+<<<<<<< HEAD
         <LogoPhotopedia />
 
         <div className="animated-title">
+=======
+        <div className="animation">
+>>>>>>> c1a9b28bbf4383042704f3e6f0f8efd0277a6a5e
           <HeaderAnimation />
         </div>
-        
       </div>
 
       <div className="right_content">
-
-        
-
         <div className="search">
           <Search />
         </div>
 
         <div className="photo_types_box">
-          
           <Box
-           className="cards"
+            className="cards"
             sx={{
-              
               boxSizing: "border-box",
               width: 280,
               height: 380,
@@ -52,7 +61,6 @@ function BoxComponent() {
           >
             <Button
               sx={{
-                
                 width: 200,
                 height: 30,
                 backgroundColor: "#FFFFFF",
@@ -68,9 +76,8 @@ function BoxComponent() {
           </Box>
 
           <Box
-          className="cards"
+            className="cards"
             sx={{
-              
               boxSizing: "border-box",
               width: 280,
               height: 380,
@@ -99,9 +106,8 @@ function BoxComponent() {
           </Box>
 
           <Box
-          className="cards"
+            className="cards"
             sx={{
-              
               boxSizing: "border-box",
               width: 280,
               height: 380,
@@ -130,9 +136,8 @@ function BoxComponent() {
           </Box>
 
           <Box
-          className="cards"
+            className="cards"
             sx={{
-              
               boxSizing: "border-box",
               width: 280,
               height: 380,
@@ -159,13 +164,10 @@ function BoxComponent() {
               Wildlife
             </Button>
           </Box>
-          
-          
         </div>
       </div>
     </>
-   
-  );
+  )
 }
 
-export default BoxComponent;
+export default BoxComponent
