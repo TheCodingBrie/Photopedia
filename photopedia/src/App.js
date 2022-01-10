@@ -6,8 +6,9 @@ import "./App.css"
 //import LandingPage from "./Components/LandingPage/LandingPage"
 import Home from "./Home"
 import BoxComponent from "./BoxComponent"
-import SocialMedia from "./Components/SocialMedia/SocialMedia"
-import Sidebar from "./Components/Sidebar/Sidebar"
+import SocialMedia from "./components/SocialMedia/SocialMedia"
+import Sidebar from "./components/Sidebar/Sidebar"
+import PhotoGallery from "./PhotoGallery"
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       <Sidebar />
       <BoxComponent />
       <SocialMedia />
+
+      {/* take away PHOTOGALERY from here when the router is ready */}
+      <PhotoGallery />
     </div>
   )
 }

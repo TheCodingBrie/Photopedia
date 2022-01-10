@@ -4,7 +4,7 @@ import "./LandingPage.css"
 export default function LandingPage() {
   return (
     <section className="LandingPage">
-      <a href="#">
+      <a href="/">
         <img
           className="LandingImage"
           src={

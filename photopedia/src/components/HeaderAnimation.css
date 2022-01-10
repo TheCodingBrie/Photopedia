@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
 
 html {
   width: 100%;
@@ -12,34 +12,31 @@ body {
   /* flex-direction: row; 
   justify-content: flex-end;
   /* align-items: center;
-  align-content: center; */ 
+  align-content: center; */
   flex-wrap: wrap;
-  background: #EEEEF5;
+  background: #eeeef5;
 }
-
 
 .where_to {
   font-size: 4vw;
   line-height: 8vw;
-  font-family: 'Perpetua Titling MT Light', sans-serif;
+  font-family: "Perpetua Titling MT Light", sans-serif;
   font-weight: 2000;
-  background-image: url('./../images/Westhavelland_2.jpg');
+  background-image: url("./../images/Westhavelland_2.jpg");
   background-size: 20%;
   background-position: 50% 50%;
   -webkit-background-clip: text;
-  color: rgba(0,0,0,0.08);
+  color: rgba(0, 0, 0, 0.08);
   animation: zoomout 10s ease 500ms infinite;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-left: 200px;
   margin-top: 10px;
-  
 }
 
 @media (max-width: 800px) {
   .where_to {
     display: none;
-    
   }
 }
 

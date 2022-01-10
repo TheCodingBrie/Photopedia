@@ -18,7 +18,7 @@ body {
 
 .photo_types_box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-right: 10px;
   padding: 3rem;
   flex-flow: row wrap;
@@ -43,9 +43,10 @@ body {
   }
 }
 
-.left_content {
+.left_content .animation {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-left: 100px;
 }
 
 .left_content img {
@@ -63,11 +64,12 @@ body {
 }
 
 @media (max-width: 800px) {
-  .right_content .search {
+  .right_content {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 5px;
+    
   }
 }
 
@@ -75,6 +77,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-}
+} */
 
 /* cards css */
