@@ -5,49 +5,42 @@ import Astrophoto from "./images/astrophotography_300X400.png";
 import Landscape from "./images/landscape_300X400.png";
 import Architecture from "./images/architecture_300X400.png";
 import Wildlife from "./images/wildlife_300X400.png";
-import Search from './Search';
+import Search from './components/Search';
 import "./Home.css";
-import { makeStyles } from "@material-ui/core";
-import { useTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import LogoPhotopedia from './LogoPhotopedia';
+import HeaderAnimation from './components/HeaderAnimation'
+import LogoPhotopedia from './components/LogoPhotopedia';
 
-const useStyles = makeStyles((theme) => ({
-  
-    [theme.breakpoints.down("sm")]: {
-      width: 180,
-      height: 280,
-      display: "flex",
-      flexDirection: "column",
-    
-  },
-}));
+
 
 function BoxComponent() {
-  const classes = useStyles();
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('sm'));
   
   return (
       <>
 
       <div className="left_content">
         <LogoPhotopedia />
+
+        <div className="animated-title">
+          <HeaderAnimation />
+        </div>
+        
       </div>
 
       <div className="right_content">
+
+        
+
         <div className="search">
           <Search />
         </div>
+
         <div className="photo_types_box">
+          
           <Box
-            className={classes.root}
-            container
-            justify="right"
-            alignItems={matches ? "center" : "flex-end"}
-            component="span"
+           className="cards"
             sx={{
               
+              boxSizing: "border-box",
               width: 280,
               height: 380,
               borderRadius: 4,
@@ -59,6 +52,7 @@ function BoxComponent() {
           >
             <Button
               sx={{
+                
                 width: 200,
                 height: 30,
                 backgroundColor: "#FFFFFF",
@@ -74,11 +68,10 @@ function BoxComponent() {
           </Box>
 
           <Box
-            xs={12}
-            md={4}
-            component="span"
+          className="cards"
             sx={{
               
+              boxSizing: "border-box",
               width: 280,
               height: 380,
               borderRadius: 4,
@@ -106,10 +99,10 @@ function BoxComponent() {
           </Box>
 
           <Box
-            xs={12}
-            md={4}
-            component="span"
+          className="cards"
             sx={{
+              
+              boxSizing: "border-box",
               width: 280,
               height: 380,
               borderRadius: 4,
@@ -137,10 +130,10 @@ function BoxComponent() {
           </Box>
 
           <Box
-            xs={12}
-            md={4}
-            component="span"
+          className="cards"
             sx={{
+              
+              boxSizing: "border-box",
               width: 280,
               height: 380,
               borderRadius: 4,
@@ -166,6 +159,8 @@ function BoxComponent() {
               Wildlife
             </Button>
           </Box>
+          
+          
         </div>
       </div>
     </>
