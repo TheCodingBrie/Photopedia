@@ -4,7 +4,7 @@ import './HeaderAnimation.css';
 function HeaderAnimation() {
     return (
         <>
-            <h1 class="where_to">WHERE TO ?</h1>
+            <h1 class="where_to">Let´s photograph?</h1>
         </>
     );
 }

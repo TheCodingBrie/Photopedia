@@ -5,10 +5,10 @@ import Astrophoto from "./images/astrophotography_300X400.png";
 import Landscape from "./images/landscape_300X400.png";
 import Architecture from "./images/architecture_300X400.png";
 import Wildlife from "./images/wildlife_300X400.png";
-import Search from './Search';
+import Search from './components/Search';
 import "./Home.css";
-import HeaderAnimation from './HeaderAnimation'
-import LogoPhotopedia from './LogoPhotopedia';
+import HeaderAnimation from './components/HeaderAnimation'
+import LogoPhotopedia from './components/LogoPhotopedia';
 
 
 
@@ -20,7 +20,7 @@ function BoxComponent() {
       <div className="left_content">
         <LogoPhotopedia />
 
-        <div className="animation">
+        <div className="animated-title">
           <HeaderAnimation />
         </div>
         

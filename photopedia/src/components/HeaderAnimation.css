@@ -19,25 +19,34 @@ body {
 
 
 .where_to {
-  font-size: 6vw;
+  font-size: 4vw;
   line-height: 8vw;
-  margin: 0;
   font-family: 'Perpetua Titling MT Light', sans-serif;
   font-weight: 2000;
-  background-image: url('./images/Westhavelland_2.jpg');
+  background-image: url('./../images/Westhavelland_2.jpg');
   background-size: 20%;
   background-position: 50% 50%;
   -webkit-background-clip: text;
   color: rgba(0,0,0,0.08);
   animation: zoomout 10s ease 500ms infinite;
-  
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-top: 10px;
   
 }
 
-.where_to h1 {
-    display: flex;
-    justify-content: flex-end;
+@media (max-width: 800px) {
+  .where_to {
+    display: none;
+    
+  }
 }
+
+/* .where_to h1 {
+    display: flex;
+    justify-content: center;
+} */
 
 @keyframes zoomout {
   from {

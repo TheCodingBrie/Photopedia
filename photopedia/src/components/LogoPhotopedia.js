@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./images/photopedia_logo_transparent.png";
+import Logo from "./../images/photopedia_logo_transparent.png";
 
 function LogoPhotopedia() {
     return (
