@@ -59,12 +59,7 @@ body {
   flex-direction: column;
   align-items: center;
   /* margin-bottom: 10px; */
-<<<<<<< HEAD
-  /* margin-left: 145px; */
-  
-=======
   margin-left: 145px;
->>>>>>> c1a9b28bbf4383042704f3e6f0f8efd0277a6a5e
 }
 
 @media (max-width: 800px) {
@@ -82,9 +77,4 @@ body {
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
-cards css */
-
-=======
 /* cards css */
->>>>>>> c1a9b28bbf4383042704f3e6f0f8efd0277a6a5e
