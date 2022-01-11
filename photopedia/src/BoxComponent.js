@@ -50,21 +50,7 @@ function BoxComponent() {
               },
             }}
           >
-            <Button
-              sx={{
-                
-                width: 200,
-                height: 30,
-                backgroundColor: "#FFFFFF",
-                opacity: 0.6,
-                marginTop: 21,
-                marginLeft: 6,
-                color: "#000000",
-                fontFamily: "Perpetua Titling MT Light",
-              }}
-            >
-              Astrophotography
-            </Button>
+            <button><a href="/">Astrophotography</a></button>
           </Box>
 
           <Box
@@ -82,20 +68,7 @@ function BoxComponent() {
               },
             }}
           >
-            <Button
-              sx={{
-                width: 200,
-                height: 30,
-                backgroundColor: "#FFFFFF",
-                opacity: 0.6,
-                marginTop: 21,
-                marginLeft: 6,
-                color: "#000000",
-                fontFamily: "Perpetua Titling MT Light",
-              }}
-            >
-              Landscape
-            </Button>
+            <button><a href="/">Landscape</a></button>
           </Box>
 
           <Box
@@ -113,20 +86,7 @@ function BoxComponent() {
               },
             }}
           >
-            <Button
-              sx={{
-                width: 200,
-                height: 30,
-                backgroundColor: "#FFFFFF",
-                opacity: 0.6,
-                marginTop: 21,
-                marginLeft: 6,
-                color: "#000000",
-                fontFamily: "Perpetua Titling MT Light",
-              }}
-            >
-              Architecture
-            </Button>
+            <button><a href="/">Architecture</a></button>
           </Box>
 
           <Box
@@ -144,20 +104,8 @@ function BoxComponent() {
               },
             }}
           >
-            <Button
-              sx={{
-                width: 200,
-                height: 30,
-                backgroundColor: "#FFFFFF",
-                opacity: 0.6,
-                marginTop: 21,
-                marginLeft: 6,
-                color: "#000000",
-                fontFamily: "Perpetua Titling MT Light",
-              }}
-            >
-              Wildlife
-            </Button>
+            <button><a href="/">Wildlife</a></button>
+            
           </Box>
           
           
