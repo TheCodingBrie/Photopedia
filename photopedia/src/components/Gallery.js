@@ -1,7 +1,10 @@
 import { Carousel } from 'react-carousel-minimal';
 import Line from './../images/line.png';
 import LogoPhotopedia from './LogoPhotopedia';
-// import ReturnButton from './ReturnButton';
+import SocialMedia from './SocialMedia/SocialMedia';
+import ReturnButton from './ReturnButton';
+import './Gallery.css';
+
 
 function Gallery() {
  const data = [
@@ -34,11 +37,21 @@ function Gallery() {
   }
   return (
     <>
-    <div className="left_content">
+    <div className="left_content_gallery">
       <LogoPhotopedia />
     </div>
+    <div className="return">
+        <a href="/">
+          <h4>Return</h4>
+          <ReturnButton />
+        </a>
+        
+        
+        
+      
+    </div>
     <div className="photo_gallery">
-      {/* <ReturnButton /> */}
+      
       <div style={{ textAlign: "center", fontFamily:"Perpetua Titling MT Light" }}>
         <h2>Westhavelland</h2>
         <img src={Line} alt='line' width="200px" />
@@ -50,8 +63,8 @@ function Gallery() {
           <Carousel
             data={data}
             time={2000}
-            width="850px"
-            height="500px"
+            width="1000px"
+            height="650px"
             captionStyle={captionStyle}
             radius="10px"
             slideNumber={true}
@@ -64,7 +77,7 @@ function Gallery() {
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
             thumbnails={true}
-            thumbnailWidth="100px"
+            thumbnailWidth="200px"
             style={{
               textAlign: "center",
               maxWidth: "850px",
@@ -74,7 +87,12 @@ function Gallery() {
           />
         </div>
       </div>
+      <div className="social_media">
+        <SocialMedia />
+      </div>
+      
     </div>
+    
     </>
   );
 }

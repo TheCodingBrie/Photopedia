@@ -1,0 +1,74 @@
+body {
+    width: 100%;
+    height: auto;
+}
+
+.left_content_gallery {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.return {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 350px;
+    gap: 10px;
+}
+
+.return h4 {
+    font-family: "Perpetua Titling MT Light", sans-serif;
+    font-size: 20px; 
+}
+
+.return a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 800px) {
+    .return {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 5px;
+      margin-left: 0;
+    }
+  }
+
+.photo_gallery {
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 800px) {
+    .left_content_gallery {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 5px;
+      
+    }
+  }
+
+@media (max-width: 800px) {
+    .photo_gallery {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 5px;
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .social_media {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: -100px;
+    }
+  }

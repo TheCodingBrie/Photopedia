@@ -29,8 +29,7 @@ body {
   color: rgba(0, 0, 0, 0.08);
   animation: zoomout 10s ease 500ms infinite;
   display: flex;
-  justify-content: flex-end;
-  margin-left: 200px;
+  /* justify-content: flex-end; */
   margin-top: 10px;
 }
 
