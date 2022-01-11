@@ -1,6 +1,5 @@
 import * as React from "react"
 import Box from "@mui/material/Box"
-import Button from "@mui/material/Button"
 import Astrophoto from "./images/astrophotography_300X400.png"
 import Landscape from "./images/landscape_300X400.png"
 import Architecture from "./images/architecture_300X400.png"
