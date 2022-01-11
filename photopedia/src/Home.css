@@ -96,6 +96,7 @@ body {
 
 .cards button a {
   text-decoration: none;
+  color: black;
 }
 
 /* .left_content .animation {
