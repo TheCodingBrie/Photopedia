@@ -1,0 +1,64 @@
+/*    SOCIAL MEDIA   */
+
+.SocialMedia {
+  height: 250px;
+}
+
+.SM-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.SM-wrapper h4 {
+  font-size: 20px;
+  font-family: "Perpetua Titling MT Light";
+  font-style: normal;
+  font-weight: normal;
+  color: #202020;
+  font-weight: 400;
+}
+
+.SM-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.SM-container a {
+  font-size: 2rem;
+  color: #202020;
+  border: none;
+  height: 100%;
+  width: 45px;
+  margin: 10px;
+  line-height: 45px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transform: scale(var(--scale, 1));
+}
+
+.SM-container a:hover,
+.SM-container a:active,
+.SM-container a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #babec2;
+  --scale: 1.2;
+}
+
+.SM-wrapper .fa-facebook-f,
+.SM-wrapper .fa-instagram,
+.SM-wrapper .fa-twitter {
+  height: 100%;
+}

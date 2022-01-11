@@ -1,38 +1,33 @@
-import React from "react";
-import "./App.css";
-// // import CardsHome from "./CardsHome";
+import React from "react"
+import "./App.css"
+// import CardsHome from "./CardsHome";
 // import SearchBar from "./SearchBar";
-// // import './Home.css';
-import Home from './Home';
-import BoxComponent from './BoxComponent';
-import Gallery from "./components/Gallery";
-
-
-
-
+// import './Home.css';
+//import LandingPage from "./Components/LandingPage/LandingPage"
+import Home from "./Home"
+import BoxComponent from "./BoxComponent"
+import SocialMedia from "./components/SocialMedia/SocialMedia"
+import Sidebar from "./components/Sidebar/Sidebar"
+import PhotoGallery from "./PhotoGallery"
 
 function App() {
   return (
     <div className="App">
-      <div className="search_and_cards">
-        
-        
-      </div>
+      <div className="search_and_cards"></div>
       <Home />
+      <Sidebar />
       <BoxComponent />
+      <SocialMedia />
 
-    {/* waiting for the router - erase here when it´s done */}
-    <div className="photo_gallery">
-      <Gallery />
+      {/* take away PHOTOGALERY from here when the router is ready */}
+      <PhotoGallery />
     </div>
-
-    </div>
-
-    
-      
-      
-  
-  );
+  )
 }
 
-export default App;
+export default App
+
+/*
+
+<LandingPage />
+*/

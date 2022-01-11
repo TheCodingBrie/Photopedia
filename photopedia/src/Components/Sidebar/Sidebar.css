@@ -1,0 +1,119 @@
+/*
+* {
+  border: 1px solid gray;
+} 
+*/
+
+.SidebarImage {
+  width: 100%;
+}
+
+.SidebarNavbar {
+  height: 100%;
+  width: 257px;
+  display: flex;
+  flex-direction: column;
+  position: fixed !important;
+  border: none;
+  padding-left: 3rem;
+}
+
+.SidebarMenu {
+  margin-left: 2rem;
+  font-size: 20px;
+  padding-top: 40%;
+}
+
+.SideNav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.SidebarList > .nav-text a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-family: "Perpetua Titling MT";
+}
+
+.SidebarList > .nav-text:hover {
+  background-color: #dee2e6;
+}
+.Sidebar-title {
+  flex: 80%;
+  color: black;
+}
+
+.Sidebar-icon {
+  flex: 20%;
+  display: grid;
+  place-items: end;
+  padding: 0;
+}
+
+.SideNavbar-toggler {
+  background-color: #babec2;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+@media (max-width: 872px) {
+  .SidebarNavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .NavLogo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .SidebarNavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .SidebarMenu {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+  .SideNavbar-toggler {
+    background-color: #babec2;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .SidebarNav-Collapse {
+    flex-grow: 1;
+    align-items: center;
+    flex-basis: 257px !important;
+  }
+}

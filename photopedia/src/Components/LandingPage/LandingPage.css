@@ -1,0 +1,21 @@
+/*   LANDING PAGE   */
+
+.LandingPage {
+  margin: 0;
+  background-image: url("https://live.staticflickr.com/65535/51801703850_abac63f270_h.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.LandingImage {
+  cursor: pointer;
+  border-radius: 10px;
+  opacity: 0.61;
+  border: none;
+}
