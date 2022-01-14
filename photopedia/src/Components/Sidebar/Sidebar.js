@@ -8,6 +8,7 @@ import LogoPhotopedia from "./LogoPhotopedia"
 
 export default function Sidebar() {
   return (
+    <>
     <section collapseOnSelect className="Sidebar">
       <Navbar expand="md" className="SidebarNavbar">
         <LogoPhotopedia className="NavLogo" />
@@ -46,5 +47,6 @@ export default function Sidebar() {
         </Container>
       </Navbar>
     </section>
-  )
+    </>
+  );
 }

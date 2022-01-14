@@ -4,23 +4,26 @@ import Astrophoto from "./images/astrophotography_300X400.png"
 import Landscape from "./images/landscape_300X400.png"
 import Architecture from "./images/architecture_300X400.png"
 import Wildlife from "./images/wildlife_300X400.png"
-import Search from "./components/Search"
+// import Search from "./components/Search"
 import "./Home.css"
 import HeaderAnimation from "./components/HeaderAnimation"
+import Sidebar from './components/Sidebar/Sidebar';
+
 
 function BoxComponent() {
   return (
     <>
       <div className="left_content">
+        <Sidebar />
         <div className="animation">
           <HeaderAnimation />
         </div>
       </div>
 
       <div className="right_content">
-        <div className="search">
+        {/* <div className="search">
           <Search />
-        </div>
+        </div> */}
 
         <div className="photo_types_box">
           <Box

@@ -8,19 +8,22 @@ body {
     justify-content: flex-start;
 }
 
-
-
-.return {
+.return Button {
     display: flex;
     justify-content: flex-start;
     margin-left: 350px;
     gap: 10px;
+    border: none;
+    font-family: "Perpetua Titling MT Light", sans-serif;
+    color: black;
 }
 
-.return h4 {
-    font-family: "Perpetua Titling MT Light", sans-serif;
-    font-size: 20px; 
+.return Button:hover {
+  color: rgb(139, 139, 175);
+  border: none;
+  
 }
+
 
 .return a {
     text-decoration: none;

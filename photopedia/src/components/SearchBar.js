@@ -23,13 +23,14 @@ const SearchBar = ({keyword,setKeyword}) => {
    
   return (
     <TextField className="search"
-     fullWidth
+    //  fullWidth
      style={style}
     //  id="standard-bare"
      variant="outlined"
     //  key="random1"
      value={keyword}
      placeholder={"What kind of photos you want to take?"}
+     sx={{ fontFamily:"Perpetua Titling MT Light" }}
      onChange={(e) => setKeyword(e.target.value)}
         InputProps={{
           endAdornment: (

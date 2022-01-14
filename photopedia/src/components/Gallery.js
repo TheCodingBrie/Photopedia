@@ -1,9 +1,10 @@
 import { Carousel } from 'react-carousel-minimal';
 import Line from './../images/line.png';
-import LogoPhotopedia from './LogoPhotopedia';
+// import LogoPhotopedia from './LogoPhotopedia';
 import SocialMedia from './SocialMedia/SocialMedia';
 import ReturnButton from './ReturnButton';
 import './Gallery.css';
+import Sidebar from './Sidebar/Sidebar';
 
 
 function Gallery() {
@@ -38,17 +39,12 @@ function Gallery() {
   return (
     <>
     <div className="left_content_gallery">
-      <LogoPhotopedia />
+      <Sidebar />
     </div>
     <div className="return">
         <a href="/">
-          <h4>Return</h4>
           <ReturnButton />
         </a>
-        
-        
-        
-      
     </div>
     <div className="photo_gallery">
       
