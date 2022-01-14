@@ -1,0 +1,96 @@
+body {
+    width: 100%;
+    height: auto;
+    font-family: "Perpetua Titling MT Light";
+}
+
+.right_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 50px;
+}
+
+.photo_box  {
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.photo_description {
+    width: 35vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.gallery_tab {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.background_photo  {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+.background_photo_description {
+    font-family: "Perpetua Titling MT Light";
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    font-size: small;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 2;
+    
+}
+
+.gallery_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.gallery_button Button {
+    font-family: "Perpetua Titling MT Light";
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    opacity: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    align-items: flex-end;
+    color: black
+}
+
+.gallery_button Button:hover {
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border: none
+}
+
+.return_button_gallery {
+    display: flex;
+    
+}
+
+
+/* .photo_box {
+    margin-left: 50px;
+} */
