@@ -1,20 +1,18 @@
-import * as React from "react"
-import Box from "@mui/material/Box"
-import Astrophoto from "./images/astrophotography_300X400.png"
-import Landscape from "./images/landscape_300X400.png"
-import Architecture from "./images/architecture_300X400.png"
-import Wildlife from "./images/wildlife_300X400.png"
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Astrophoto from "./images/astrophotography_300X400.png";
+import Landscape from "./images/landscape_300X400.png";
+import Architecture from "./images/architecture_300X400.png";
+import Wildlife from "./images/wildlife_300X400.png";
 // import Search from "./components/Search"
-import "./Home.css"
-import HeaderAnimation from "./components/HeaderAnimation"
-import Sidebar from './components/Sidebar/Sidebar';
-
+import "./Home.css";
+import HeaderAnimation from "./Components/HeaderAnimation";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 function BoxComponent() {
   return (
     <>
       <div className="left_content">
-        <Sidebar />
         <div className="animation">
           <HeaderAnimation />
         </div>
@@ -39,10 +37,9 @@ function BoxComponent() {
               },
             }}
           >
-          <button>
+            <button>
               <a href="/">Astrophotography</a>
             </button>
-
           </Box>
 
           <Box
@@ -106,4 +103,4 @@ function BoxComponent() {
     </>
   );
 }
-export default BoxComponent
+export default BoxComponent;

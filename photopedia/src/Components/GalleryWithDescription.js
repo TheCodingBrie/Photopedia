@@ -13,7 +13,7 @@ import "./GalleryWithDescription.css";
 import Sidebar from "./Sidebar/Sidebar";
 // import SearchBar from "./SearchBar";
 import Line from "./../images/line.png";
-import GalleryButton from "./../components/GalleryButton";
+import GalleryButton from "./../Components/GalleryButton";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import ReturnButton from "./ReturnButton";
 import "./ReturnButton.css";
@@ -99,7 +99,7 @@ export default function VerticalTabs() {
         <div className="return_button_gallery">
           <ReturnButton />
         </div>
-        
+
         <Box
           className="photo_box"
           sx={{
@@ -112,7 +112,6 @@ export default function VerticalTabs() {
             marginLeft: 40,
           }}
         >
-        
           <Tabs
             orientation="vertical"
             variant="scrollable"
@@ -121,31 +120,21 @@ export default function VerticalTabs() {
             aria-label="Vertical tabs example"
             sx={{ borderRight: 1, borderColor: "divider" }}
           >
-        
-            <Tab label="Westhavelland" 
-            {...a11yProps(0)} 
-            style={tabStyles} 
-            />
-            <Tab label="Rhön" 
-            {...a11yProps(1)} 
-            style={tabStyles} 
-            />
+            <Tab label="Westhavelland" {...a11yProps(0)} style={tabStyles} />
+            <Tab label="Rhön" {...a11yProps(1)} style={tabStyles} />
             <Tab
               label="Eifel Nature Park"
               {...a11yProps(2)}
               style={tabStyles}
             />
-            <Tab label="Winkl-Moosalm" 
-            {...a11yProps(3)} 
-            style={tabStyles} 
-            />
+            <Tab label="Winkl-Moosalm" {...a11yProps(3)} style={tabStyles} />
             <Tab
               label="Sankt Andreasberg"
               {...a11yProps(4)}
               style={tabStyles}
             />
           </Tabs>
-          
+
           <div className="photo_box">
             <TabPanel value={value} index={0}>
               <div
@@ -351,9 +340,6 @@ export default function VerticalTabs() {
         </Box>
         <SocialMedia />
       </div>
-      
-       
-      
     </>
   );
 }

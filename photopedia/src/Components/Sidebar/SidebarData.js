@@ -1,9 +1,9 @@
-import React from "react"
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined"
-import PhotoCameraOutlinedIcon from "@mui/icons-material/PhotoCameraOutlined"
-import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined"
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined"
+import React from "react";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import PhotoCameraOutlinedIcon from "@mui/icons-material/PhotoCameraOutlined";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 
 export const SidebarData = [
   {
@@ -36,7 +36,7 @@ export const SidebarData = [
     icon: <ContactsOutlinedIcon />,
     cName: "nav-text",
   },
-]
+];
 
 /*
 import React from "react"
