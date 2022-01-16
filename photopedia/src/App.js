@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css";
 // import CardsHome from "./CardsHome";
 // import SearchBar from "./SearchBar";
-// import './Home.css';
+import './Home.css';
 import LandingPage from "./components/LandingPage/LandingPage"
-// import Home from "./Home"
+import Home from "./Home"
 import BoxComponent from "./BoxComponent";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <div className="search_and_cards"></div>
       <LandingPage />
-      {/* <Home /> */}
+      <Home /> 
       <Sidebar />
       <BoxComponent /> 
       <SocialMedia />

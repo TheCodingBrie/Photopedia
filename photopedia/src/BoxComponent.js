@@ -21,9 +21,9 @@ function BoxComponent() {
       </div>
 
       <div className="right_content">
-        {/* <div className="search">
-          <Search />
-        </div> */}
+        <div className="search">
+          {/* <Search /> */}
+        </div>
 
         <div className="photo_types_box">
           <Box

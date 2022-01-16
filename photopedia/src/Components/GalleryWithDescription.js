@@ -348,9 +348,14 @@ export default function VerticalTabs() {
               </div>
             </TabPanel>
           </div>
+          
         </Box>
-        <SocialMedia />
+        
       </div>
+      <div className="social_media">
+         <SocialMedia />
+      </div>
+     
       
        
       
