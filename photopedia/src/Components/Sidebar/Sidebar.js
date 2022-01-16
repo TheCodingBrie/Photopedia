@@ -4,14 +4,11 @@ import { SidebarData } from "./SidebarData"
 import { Navbar, Nav, Container } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import line from "../Images/line.png"
-import LogoPhotopedia from "./LogoPhotopedia"
 
 export default function Sidebar() {
   return (
-    <>
     <section collapseOnSelect className="Sidebar">
       <Navbar expand="md" className="SidebarNavbar">
-        <LogoPhotopedia className="NavLogo" />
         <Container className="SidebarMenu">
           <Navbar.Toggle
             className="SideNavbar-toggler"
@@ -47,6 +44,11 @@ export default function Sidebar() {
         </Container>
       </Navbar>
     </section>
-    </>
-  );
+  )
 }
+
+/*
+import LogoPhotopedia from "./LogoPhotopedia"
+   <LogoPhotopedia className="NavLogo" />
+
+   */

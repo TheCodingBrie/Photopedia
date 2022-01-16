@@ -1,0 +1,77 @@
+/*             CONTACT                 */
+
+.BC-mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-form {
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  font-family: "Perpetua Titling MT Light";
+  font-size: 16px;
+  color: #212121;
+  line-height: 1.42857143;
+  -webkit-text-size-adjust: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact-container:before,
+.contact-container:after {
+  display: table;
+  content: " ";
+  box-sizing: border-box;
+}
+
+.contact-container:after {
+  clear: both;
+}
+.contact-container > h3 {
+  font-family: "Perpetua Titling MT Light";
+  font-size: 25px;
+  font-weight: bold;
+  padding: 1rem;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+.contact-form {
+  margin-top: 0em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.Cform-control {
+  border: 0;
+  border-bottom: 1px solid #212121;
+  background-color: transparent;
+  width: 100%;
+  height: 34px;
+  padding: 6px 0;
+}
+.c-message {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .contact-form {
+    padding-bottom: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    padding-bottom: 60px;
+  }
+
+  .BC-mainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

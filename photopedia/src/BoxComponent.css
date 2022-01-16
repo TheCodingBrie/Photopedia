@@ -1,0 +1,100 @@
+body {
+  width: 100%;
+  height: auto;
+}
+
+/* @media(max-width: 800px){
+        body {
+            display: flex;
+            align-items: center;
+        }
+    } */
+
+@font-face {
+  font-family: "Perpetua Titling MT Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Perpetua Titling MT"), format("ttf");
+}
+
+.photo_types_box {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  /* padding: 3rem; --------------------------------------------------------*/
+  padding: 2rem;
+  flex-flow: row wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards button {
+  width: 200px;
+  height: 30px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-family: "Perpetua Titling MT Light";
+  border-radius: 5px;
+  border: none;
+}
+
+.cards button a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .left_content .animation {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    } */
+
+/* cards css */
+
+/*------------------------------------ --- ----------------------------------------*/
+
+.BC-mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ---------------------------------  MEDIA QUERY------------------------------------- */
+
+@media (max-width: 800px) {
+  .photo_types_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .right_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  .BC-mainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

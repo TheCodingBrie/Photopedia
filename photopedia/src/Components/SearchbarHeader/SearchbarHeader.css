@@ -1,0 +1,59 @@
+/*------------------------------------ KATE ----------------------------------------*/
+
+.left_content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.BC-header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: end;
+  margin-right: auto;
+  margin-left: auto;
+}
+.BC-header > .SH-search {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-bottom: 3rem; /* */
+}
+
+@media (max-width: 810px) {
+  .left_content {
+    display: block;
+  }
+  .BC-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .BC-header > .SH-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem; /* */
+  }
+}
+
+@media (max-width: 800px) {
+  .left_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  .BC-header > .SH-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem; /* */
+  }
+}

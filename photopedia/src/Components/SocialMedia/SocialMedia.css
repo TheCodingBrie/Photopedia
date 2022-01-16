@@ -1,8 +1,10 @@
-/*    SOCIAL MEDIA   */
+/*    SOCIAL MEDIA   
 
 .SocialMedia {
   height: 250px;
 }
+
+*/
 
 .SM-wrapper {
   display: flex;
@@ -28,7 +30,6 @@
   align-items: center;
   justify-content: center;
   height: 4rem;
-  
 }
 
 .SM-container a {

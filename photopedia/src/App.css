@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'Perpetua Titling MT Light';
+  font-family: "Perpetua Titling MT Light";
   font-style: normal;
   font-weight: normal;
-  src: local('Perpetua Titling MT'),  format('ttf');
+  src: local("Perpetua Titling MT"), format("ttf");
 }
 
+.App,
 body {
   width: 100%;
   height: auto;
-  
+  background-color: #fff; /*--------------------------------*/
 }
 
-
-
-
-
-
-
+/*
+* {
+  border: 1px solid pink;
+}
+*/
