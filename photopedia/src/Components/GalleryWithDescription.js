@@ -1,36 +1,28 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import Tabs from "@mui/material/Tabs"
-import Tab from "@mui/material/Tab"
-import Typography from "@mui/material/Typography"
-import Box from "@mui/material/Box"
-import Photo1 from "./../images/Westhavelland.png"
-import Photo2 from "./../images/Rhön.png"
-import Photo3 from "./../images/Eifel.png"
-import Photo4 from "./../images/Winkl_Moosalm.png"
-import Photo5 from "./../images/Sankt_Andreasberg.png"
-import "./GalleryWithDescription.css"
-import Sidebar from "./Sidebar/Sidebar"
+import * as React from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Photo1 from "./../images/Westhavelland.png";
+import Photo2 from "./../images/Rhön.png";
+import Photo3 from "./../images/Eifel.png";
+import Photo4 from "./../images/Winkl_Moosalm.png";
+import Photo5 from "./../images/Sankt_Andreasberg.png";
+import "./GalleryWithDescription.css";
+import Sidebar from "./Sidebar/Sidebar";
 // import SearchBar from "./SearchBar";
-<<<<<<< HEAD
-import Line from "./../images/line.png"
-import GalleryButton from "./../components/GalleryButton"
-import SocialMedia from "./SocialMedia/SocialMedia"
-import ReturnButton from "./ReturnButton"
-import "./ReturnButton.css"
-=======
 import Line from "./../images/line.png";
 import GalleryButton from "./../Components/GalleryButton";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import ReturnButton from "./ReturnButton";
 import "./ReturnButton.css";
->>>>>>> router/leaflet
 
 // import LocationButton from './../components/LocationButton';
 // import PhotoDescriptions from './../components/Descriptions';
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props
+  const { children, value, index, ...other } = props;
 
   return (
     <div
@@ -46,28 +38,28 @@ function TabPanel(props) {
         </Box>
       )}
     </div>
-  )
+  );
 }
 
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
-}
+};
 
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
     "aria-controls": `vertical-tabpanel-${index}`,
-  }
+  };
 }
 
 export default function VerticalTabs() {
-  const [value, setValue] = React.useState(0)
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
-    setValue(newValue)
-  }
+    setValue(newValue);
+  };
 
   const backgroundStyles = {
     backgroundColor: "#FFFFFF",
@@ -75,11 +67,11 @@ export default function VerticalTabs() {
     width: 516,
     height: 542,
     borderRadius: 5,
-  }
+  };
 
   const tabStyles = {
     fontFamily: "Perpetua Titling MT Light",
-  }
+  };
 
   // const photoStyles = {
   //   backgroundRepeat: 'no-repeat',
@@ -349,5 +341,5 @@ export default function VerticalTabs() {
         <SocialMedia />
       </div>
     </>
-  )
+  );
 }

@@ -1,8 +1,13 @@
+.logo_photopedia {
+  position: fixed;
+  top: 50px;
+  left: 57px;
+}
+
 .left_content > .animation {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 100px; ------------------------------------------------*/
 }
 /*
     .left_content img {

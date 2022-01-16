@@ -1,11 +1,18 @@
 import React from "react";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import PhotoCameraOutlinedIcon from "@mui/icons-material/PhotoCameraOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import AddLocationOutlinedIcon from "@mui/icons-material/AddLocationOutlined";
 
 export const SidebarData = [
+  {
+    title: "HOME",
+    path: "photopedia",
+    icon: <HomeOutlinedIcon />,
+    cName: "nav-text",
+  },
   {
     title: "ABOUT US",
     path: "about",
@@ -13,21 +20,21 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "SEARCH",
-    path: "search",
-    icon: <SearchOutlinedIcon />,
+    title: "LOCATIONS",
+    path: "locations",
+    icon: <LocationOnOutlinedIcon />,
     cName: "nav-text",
   },
   {
-    title: "PHOTO TYPE",
-    path: "photo-type",
+    title: "ADD A PHOTO",
+    path: "newphoto",
     icon: <PhotoCameraOutlinedIcon />,
     cName: "nav-text",
   },
   {
-    title: "LOCATIONS",
-    path: "locations",
-    icon: <LocationOnOutlinedIcon />,
+    title: "ADD A LOCATION",
+    path: "newlocation",
+    icon: <AddLocationOutlinedIcon />,
     cName: "nav-text",
   },
   {

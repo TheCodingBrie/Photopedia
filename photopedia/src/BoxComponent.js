@@ -1,35 +1,18 @@
-<<<<<<< HEAD
-import * as React from "react"
-import Box from "@mui/material/Box"
-import Astrophoto from "./images/astrophotography_300X400.png"
-import Landscape from "./images/landscape_300X400.png"
-import Architecture from "./images/architecture_300X400.png"
-import Wildlife from "./images/wildlife_300X400.png"
-import "./BoxComponent.css"
-import Sidebar from "./Components/Sidebar/Sidebar"
-import BoxHeader from "./Components/BoxHeader/BoxHeader"
-=======
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Astrophoto from "./images/astrophotography_300X400.png";
 import Landscape from "./images/landscape_300X400.png";
 import Architecture from "./images/architecture_300X400.png";
 import Wildlife from "./images/wildlife_300X400.png";
-// import Search from "./components/Search"
 import "./Home.css";
-import HeaderAnimation from "./Components/HeaderAnimation";
-import Sidebar from "./Components/Sidebar/Sidebar";
->>>>>>> router/leaflet
+import BoxHeader from "./Components/BoxHeader/BoxHeader";
 
 function BoxComponent() {
   return (
     <>
-<<<<<<< HEAD
       <BoxHeader />
-
       <div className="right_content">
         <div className="BC-mainContent">
-          <Sidebar />
           <div className="photo_types_box">
             <Box
               className="cards"
@@ -48,37 +31,6 @@ function BoxComponent() {
                 <a href="/">Astrophotography</a>
               </button>
             </Box>
-=======
-      <div className="left_content">
-        <div className="animation">
-          <HeaderAnimation />
-        </div>
-      </div>
-
-      <div className="right_content">
-        {/* <div className="search">
-          <Search />
-        </div> */}
-
-        <div className="photo_types_box">
-          <Box
-            className="cards"
-            sx={{
-              boxSizing: "border-box",
-              width: 280,
-              height: 380,
-              borderRadius: 4,
-              backgroundImage: `url(${Astrophoto})`,
-              "&:hover": {
-                opacity: [0.9, 0.8, 0.8],
-              },
-            }}
-          >
-            <button>
-              <a href="/">Astrophotography</a>
-            </button>
-          </Box>
->>>>>>> router/leaflet
 
             <Box
               className="cards"
@@ -140,6 +92,6 @@ function BoxComponent() {
         </div>
       </div>
     </>
-  )
+  );
 }
 export default BoxComponent;

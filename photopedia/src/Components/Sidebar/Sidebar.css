@@ -4,8 +4,10 @@
 } 
 */
 
-.logo_photopedia {
-  background-color: white !important;
+.Sidebar {
+  position: fixed;
+  left: 0px;
+  top: 170px;
 }
 
 .SidebarImage {
@@ -15,7 +17,7 @@
 
 .SidebarNavbar {
   height: 100%;
-  width: 257px;
+  width: 312px;
   display: flex;
   flex-direction: column;
   /* position: fixed !important; */
