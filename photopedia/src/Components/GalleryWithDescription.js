@@ -12,11 +12,19 @@ import Photo5 from "./../images/Sankt_Andreasberg.png"
 import "./GalleryWithDescription.css"
 import Sidebar from "./Sidebar/Sidebar"
 // import SearchBar from "./SearchBar";
+<<<<<<< HEAD
 import Line from "./../images/line.png"
 import GalleryButton from "./../components/GalleryButton"
 import SocialMedia from "./SocialMedia/SocialMedia"
 import ReturnButton from "./ReturnButton"
 import "./ReturnButton.css"
+=======
+import Line from "./../images/line.png";
+import GalleryButton from "./../Components/GalleryButton";
+import SocialMedia from "./SocialMedia/SocialMedia";
+import ReturnButton from "./ReturnButton";
+import "./ReturnButton.css";
+>>>>>>> router/leaflet
 
 // import LocationButton from './../components/LocationButton';
 // import PhotoDescriptions from './../components/Descriptions';

@@ -4,6 +4,10 @@
 } 
 */
 
+.logo_photopedia {
+  background-color: white !important;
+}
+
 .SidebarImage {
   width: 100%;
   padding-bottom: 10px;
