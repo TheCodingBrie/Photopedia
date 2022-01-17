@@ -4,6 +4,7 @@
 } 
 */
 
+
 .Sidebar {
   position: fixed;
   left: 0px;
@@ -32,6 +33,7 @@
 }
 
 .SideNav-link {
+  color:black;
   display: flex;
   flex-direction: row;
   justify-content: center;

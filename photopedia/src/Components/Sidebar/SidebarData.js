@@ -9,37 +9,37 @@ import AddLocationOutlinedIcon from "@mui/icons-material/AddLocationOutlined";
 export const SidebarData = [
   {
     title: "HOME",
-    path: "photopedia/home",
+    path: "/photopedia/home",
     icon: <HomeOutlinedIcon />,
     cName: "nav-text",
   },
   {
     title: "ABOUT US",
-    path: "photopedia/about",
+    path: "/photopedia/about",
     icon: <InfoOutlinedIcon />,
     cName: "nav-text",
   },
   {
     title: "LOCATIONS",
-    path: "photopedia/locations",
+    path: "/photopedia/locations",
     icon: <LocationOnOutlinedIcon />,
     cName: "nav-text",
   },
   {
     title: "ADD A PHOTO",
-    path: "photopedia/newphoto",
+    path: "/photopedia/newphoto",
     icon: <PhotoCameraOutlinedIcon />,
     cName: "nav-text",
   },
   {
     title: "ADD A LOCATION",
-    path: "photopedia/newlocation",
+    path: "/photopedia/newlocation",
     icon: <AddLocationOutlinedIcon />,
     cName: "nav-text",
   },
   {
     title: "CONTACT",
-    path: "photopedia/contact",
+    path: "/photopedia/contact",
     icon: <ContactsOutlinedIcon />,
     cName: "nav-text",
   },

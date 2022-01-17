@@ -1,10 +1,10 @@
-import React from "react"
-import "./SocialMedia.css"
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa"
+import React from "react";
+import "./SocialMedia.css";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function SocialMedia() {
   return (
-    <section id="contact" class="SocialMedia">
+    <section id="contact" className="SocialMedia">
       <div className="SM-wrapper">
         <h4>Follow:</h4>
         <div className="SM-container">
@@ -22,5 +22,5 @@ export default function SocialMedia() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -12,12 +12,10 @@ export default function photopediaRoutes() {
     <Routes>
       <Route path="/" element={<LandingPage />}></Route>
       <Route path="photopedia" element={<App />}>
-        <Route path="home" element={<BoxComponent />}>
-          <Route
-            path="description"
-            element={<GalleryWithDescription />}
-          ></Route>
-        </Route>
+        <Route path="home" element={<BoxComponent />}></Route>
+        {/* /home/:photoType
+const { photoType } = useParams() */}
+        <Route path="description" element={<GalleryWithDescription />}></Route>
         <Route path="locations" element={<Locations />}></Route>
         {/* <Route path="about" element={}></Route>
         <Route path="newphoto" element={}></Route>

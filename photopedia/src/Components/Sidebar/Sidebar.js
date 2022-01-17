@@ -1,10 +1,10 @@
 import React from "react";
 import "./Sidebar.css";
 import { SidebarData } from "./SidebarData";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { NavLink, Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import line from "../Images/line.png";
-import { NavLink } from "react-bootstrap";
+import { NavLink as RouterLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -29,12 +29,11 @@ export default function Sidebar() {
                       id={
                         window.location.pathname === item.path ? "active" : ""
                       }
-                      onClick={() => (window.location.pathname = item.path)}
                     >
-                      <NavLink className="SideNav-link" to={item.path}>
+                      <RouterLink className="SideNav-link" to={item.path}>
                         <span className="Sidebar-title">{item.title}</span>
                         <div className="Sidebar-icon">{item.icon}</div>
-                      </NavLink>
+                      </RouterLink>
                       <img
                         className="SidebarImage d-inline-block align-bottom"
                         src={line}
