@@ -1,11 +1,11 @@
 import React from "react";
 import App from "./App";
 import { Routes, Route } from "react-router-dom";
-import LandingPage from "./Components/LandingPage/LandingPage";
+import LandingPage from "./components/LandingPage/LandingPage";
 import BoxComponent from "./BoxComponent";
-import GalleryWithDescription from "./Components/GalleryWithDescription";
-import Contact from "./Components/Contact/Contact";
-import Locations from "./Components/Locations/Locations";
+import GalleryWithDescription from "./components/GalleryWithDescription";
+import Contact from "./components/Contact/Contact";
+import Locations from "./components/Locations/Locations";
 
 export default function photopediaRoutes() {
   return (
