@@ -10,10 +10,10 @@ import Photo3 from "./../images/Eifel.png";
 import Photo4 from "./../images/Winkl_Moosalm.png";
 import Photo5 from "./../images/Sankt_Andreasberg.png";
 import "./GalleryWithDescription.css";
-import Sidebar from "./Sidebar/Sidebar";
+// import Sidebar from "./Sidebar/Sidebar";
 // import SearchBar from "./SearchBar";
 import Line from "./../images/line.png";
-import GalleryButton from "./../Components/GalleryButton";
+import GalleryButton from "./../components/GalleryButton";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import ReturnButton from "./ReturnButton";
 import "./ReturnButton.css";
@@ -82,7 +82,7 @@ export default function VerticalTabs() {
   return (
     <>
       <div className="left_content_gallery">
-        <Sidebar />
+        {/* <Sidebar /> */}
       </div>
       <div className="right_box">
         <div
@@ -92,13 +92,15 @@ export default function VerticalTabs() {
             fontFamily: "Perpetua Titling MT Light",
           }}
         >
-          <h5>Astrophotography</h5>
-          <img src={Line} alt="line" width="100px" />
-        </div>
-        {/* <SearchBar /> */}
-        <div className="return_button_gallery">
+          <h2>Astrophotography</h2>
+          <img src={Line} alt="line" width="300px" />
+
+          <div className="return_button_gallery">
           <ReturnButton />
         </div>
+        </div>
+        {/* <SearchBar /> */}
+        
 
         <Box
           className="photo_box"
@@ -111,7 +113,9 @@ export default function VerticalTabs() {
             height: 224,
             marginLeft: 40,
           }}
+          
         >
+          
           <Tabs
             orientation="vertical"
             variant="scrollable"
@@ -134,6 +138,7 @@ export default function VerticalTabs() {
               style={tabStyles}
             />
           </Tabs>
+          
 
           <div className="photo_box">
             <TabPanel value={value} index={0}>
@@ -336,9 +341,15 @@ export default function VerticalTabs() {
                 </div>
               </div>
             </TabPanel>
+            
           </div>
+          
+          
         </Box>
-        <SocialMedia />
+        
+      </div>
+      <div className="social_media">
+         <SocialMedia />
       </div>
     </>
   );

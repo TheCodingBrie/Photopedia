@@ -5,7 +5,9 @@ import Landscape from "./images/landscape_300X400.png";
 import Architecture from "./images/architecture_300X400.png";
 import Wildlife from "./images/wildlife_300X400.png";
 import "./Home.css";
-import BoxHeader from "./Components/BoxHeader/BoxHeader";
+import BoxHeader from "./components/BoxHeader/BoxHeader";
+
+
 
 function BoxComponent() {
   return (
@@ -27,9 +29,11 @@ function BoxComponent() {
                 },
               }}
             >
-              <button>
-                <a href="/">Astrophotography</a>
-              </button>
+              
+                <button>
+                  <a href="/">Astrophotography</a>
+                </button>
+              
             </Box>
 
             <Box

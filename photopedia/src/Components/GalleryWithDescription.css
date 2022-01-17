@@ -4,19 +4,30 @@ body {
   font-family: "Perpetua Titling MT Light";
 }
 
-.right_box {
+/* .right_box {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
   gap: 50px;
-}
+} */
 
 .photo_box {
   border: none;
   border-radius: 5px;
   margin-left: 10px;
+  margin-right: 10px;
+  
 }
+
+@media (min-width: 960px) {
+    .photo_box {
+      display: flex;
+      justify-content: center;
+    
+    }
+  }
+  
 
 .photo_description {
   width: 35vw;
@@ -28,22 +39,36 @@ body {
   border-radius: 5px;
 }
 
-.gallery_tab {
+/* .gallery_tab {
   display: flex;
   justify-content: flex-end;
-}
+} */
 
 .header_box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 50px;
+  margin-right: 350px;
+}
+
+@media (min-width: 960px) {
+  .header_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 50px;
+    margin-right: 530px;
+  
+  }
 }
 
 .background_photo {
   display: flex;
   justify-content: flex-end;
   border-radius: 5px;
+  height: auto;
+  width: 100%;
 }
 
 .background_photo_description {
@@ -55,6 +80,7 @@ body {
   text-align: center;
   padding-top: 10px;
   line-height: 2;
+  
 }
 
 .gallery_button {
@@ -84,7 +110,39 @@ body {
 
 .return_button_gallery {
   display: flex;
+  align-self: flex-start;
+  margin-left: 470px;
+  padding-top: 50px;
 }
+
+
+@media (min-width: 960px) {
+  .return_button_gallery {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 680px;
+  padding-top: 50px;
+  
+  }
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+@media (min-width: 960px) {
+  .social_media {
+  display: flex;
+  justify-content: center;
+  margin-left: 500px;
+  padding-top: 50px;
+  
+  }
+}
+
+
 
 /* .photo_box {
     margin-left: 50px;
