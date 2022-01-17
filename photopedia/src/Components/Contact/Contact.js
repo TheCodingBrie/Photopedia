@@ -1,13 +1,13 @@
-import * as React from "react"
-import "./Contact.css"
-import Sidebar from "../Sidebar/Sidebar"
-import BoxHeader from "../BoxHeader/BoxHeader"
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
-import Button from "react-bootstrap/Button"
-import { FaRegPaperPlane } from "react-icons/fa"
-import Form from "react-bootstrap/Form"
+import * as React from "react";
+import "./Contact.css";
+import Sidebar from "../Sidebar/Sidebar";
+import BoxHeader from "../BoxHeader/BoxHeader";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import { FaRegPaperPlane } from "react-icons/fa";
+import Form from "react-bootstrap/Form";
 
 function Contact() {
   return (
@@ -63,6 +63,6 @@ function Contact() {
         </section>
       </div>
     </>
-  )
+  );
 }
-export default Contact
+export default Contact;

@@ -16,7 +16,8 @@ export default function Locations() {
   const loadContent = () => {
     fetch(fetchURL)
       .then((res) => res.json())
-      .then((data) => setLocations(data));
+      .then((data) => setLocations(data))
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -32,9 +33,12 @@ export default function Locations() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {locations.map((location) => (
-            <Marker
-              position={[location.lattitude, location.longitude]}
-            ></Marker>
+            <Marker position={[location.lattitude, location.longitude]}>
+              <Popup>
+                <b>{location.name}</b> is a great place to take{" "}
+                <b>{location.type}</b> photos
+              </Popup>
+            </Marker>
           ))}
         </MapContainer>
       </div>

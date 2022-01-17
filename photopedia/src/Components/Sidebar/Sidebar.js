@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import { SidebarData } from "./SidebarData";
-import { NavLink, Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import line from "../Images/line.png";
 import { NavLink as RouterLink } from "react-router-dom";

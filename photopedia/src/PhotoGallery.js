@@ -1,5 +1,5 @@
 import React from "react";
-import Gallery from "./Components/Gallery";
+import Gallery from "./components/Gallery";
 // import './Home.css';
 
 function PhotoGallery() {

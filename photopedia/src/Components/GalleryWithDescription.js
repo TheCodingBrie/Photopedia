@@ -14,9 +14,10 @@ import "./GalleryWithDescription.css";
 // import SearchBar from "./SearchBar";
 import Line from "./../images/line.png";
 import GalleryButton from "./../components/GalleryButton";
-import SocialMedia from "./SocialMedia/SocialMedia";
 import ReturnButton from "./ReturnButton";
 import "./ReturnButton.css";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 // import LocationButton from './../components/LocationButton';
 // import PhotoDescriptions from './../components/Descriptions';
@@ -56,6 +57,19 @@ function a11yProps(index) {
 
 export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
+  const [locations, setLocations] = useState([]);
+
+  useEffect(() => loadContent(), []);
+
+  const { type } = useParams();
+
+  const fetchURL = `https://photopedia-server.herokuapp.com/api/locations/${type}/locations`;
+  const loadContent = () => {
+    fetch(fetchURL)
+      .then((res) => res.json())
+      .then((data) => setLocations(data))
+      .catch((err) => console.log(err));
+  };
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -81,9 +95,7 @@ export default function VerticalTabs() {
 
   return (
     <>
-      <div className="left_content_gallery">
-        {/* <Sidebar /> */}
-      </div>
+      <div className="left_content_gallery">{/* <Sidebar /> */}</div>
       <div className="right_box">
         <div
           className="header_box"
@@ -92,15 +104,14 @@ export default function VerticalTabs() {
             fontFamily: "Perpetua Titling MT Light",
           }}
         >
-          <h2>Astrophotography</h2>
+          <h2>{type}</h2>
           <img src={Line} alt="line" width="300px" />
 
           <div className="return_button_gallery">
-          <ReturnButton />
-        </div>
+            <ReturnButton />
+          </div>
         </div>
         {/* <SearchBar /> */}
-        
 
         <Box
           className="photo_box"
@@ -113,9 +124,7 @@ export default function VerticalTabs() {
             height: 224,
             marginLeft: 40,
           }}
-          
         >
-          
           <Tabs
             orientation="vertical"
             variant="scrollable"
@@ -124,6 +133,9 @@ export default function VerticalTabs() {
             aria-label="Vertical tabs example"
             sx={{ borderRight: 1, borderColor: "divider" }}
           >
+            {/* {locations.map((location) => (
+              <Tab label={location.name} {...a11yProps(0)} style={tabStyles} />
+            ))} */}
             <Tab label="Westhavelland" {...a11yProps(0)} style={tabStyles} />
             <Tab label="Rhön" {...a11yProps(1)} style={tabStyles} />
             <Tab
@@ -138,9 +150,34 @@ export default function VerticalTabs() {
               style={tabStyles}
             />
           </Tabs>
-          
 
           <div className="photo_box">
+            {/* {locations.map((location, i) => (
+              <TabPanel value={value} index={i}>
+                <div
+                  className="background_photo"
+                  style={{
+                    backgroundImage: `url(${Photo1})`,
+                    backgroundRepeat: "no-repeat",
+                    width: 1032,
+                    height: 542,
+                  }}
+                >
+                  <div
+                    className="background_photo_description"
+                    style={backgroundStyles}
+                  >
+                    <div className="background_photo_description">
+                      <h4>{location.name}</h4>
+                      <p>{location.description}</p>
+                    </div>
+                    <div className="gallery_button">
+                      <GalleryButton />
+                    </div>
+                  </div>
+                </div>
+              </TabPanel>
+            ))} */}
             <TabPanel value={value} index={0}>
               <div
                 className="background_photo"
@@ -341,15 +378,8 @@ export default function VerticalTabs() {
                 </div>
               </div>
             </TabPanel>
-            
           </div>
-          
-          
         </Box>
-        
-      </div>
-      <div className="social_media">
-         <SocialMedia />
       </div>
     </>
   );

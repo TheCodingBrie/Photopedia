@@ -19,15 +19,9 @@ function App() {
         <div className="content-space">
           <Outlet />
         </div>
-        {/* <SocialMedia /> */}
+        <SocialMedia />
       </div>
-      
-      <Outlet />
-      <SocialMedia />
-
     </div>
-
-    
   );
 }
 

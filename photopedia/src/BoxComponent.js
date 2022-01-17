@@ -6,8 +6,7 @@ import Architecture from "./images/architecture_300X400.png";
 import Wildlife from "./images/wildlife_300X400.png";
 import "./Home.css";
 import BoxHeader from "./components/BoxHeader/BoxHeader";
-
-
+import { NavLink } from "react-router-dom";
 
 function BoxComponent() {
   return (
@@ -29,11 +28,9 @@ function BoxComponent() {
                 },
               }}
             >
-              
-                <button>
-                  <a href="/">Astrophotography</a>
-                </button>
-              
+              <button>
+                <NavLink to="../Astrophotography">Astrophotography</NavLink>
+              </button>
             </Box>
 
             <Box
@@ -51,7 +48,7 @@ function BoxComponent() {
               }}
             >
               <button>
-                <a href="/">Landscape</a>
+                <NavLink to="../Landscape">Landscape</NavLink>
               </button>
             </Box>
 
@@ -70,7 +67,7 @@ function BoxComponent() {
               }}
             >
               <button>
-                <a href="/">Architecture</a>
+                <NavLink to="../Architecture">Architecture</NavLink>
               </button>
             </Box>
 
@@ -89,7 +86,7 @@ function BoxComponent() {
               }}
             >
               <button>
-                <a href="/">Wildlife</a>
+                <NavLink to="../Wildlife">Wildlife</NavLink>
               </button>
             </Box>
           </div>
