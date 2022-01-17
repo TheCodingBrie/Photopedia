@@ -13,12 +13,12 @@ export const SidebarData = [
     icon: <HomeOutlinedIcon />,
     cName: "nav-text",
   },
-  {
-    title: "ABOUT US",
-    path: "/photopedia/about",
-    icon: <InfoOutlinedIcon />,
-    cName: "nav-text",
-  },
+  // {
+  //   title: "ABOUT US",
+  //   path: "/photopedia/about",
+  //   icon: <InfoOutlinedIcon />,
+  //   cName: "nav-text",
+  // },
   {
     title: "LOCATIONS",
     path: "/photopedia/locations",

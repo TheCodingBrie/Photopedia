@@ -4,6 +4,7 @@ body {
 }
 
 .header_text_location {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     text-align: center;

@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import "./AddLocations.css";
 import UploadButton from "../components/UploadButton";
 
-const fetchUrl = "https://photopedia-server.herokuapp.com/api/locations";
+const fetchUrl = "https://photopedia-server.herokuapp.com/api/photos";
 
-export default function AddLocation() {
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-  const [lattitude, setLattitude] = useState("");
-  const [longitude, setLongitude] = useState("");
+export default function AddPhoto() {
+  const [title, setTitle] = useState("");
+  const [url, setUrl] = useState("");
   const [type, setType] = useState("");
+  const [locationId, setLocationId] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,20 +27,18 @@ export default function AddLocation() {
       },
       method: "POST",
       body: JSON.stringify({
-        name: name,
-        description: description,
-        lattitude: lattitude,
-        longitude: longitude,
+        title: title,
+        url: url,
         type: type,
+        locationId: locationId,
       }),
     })
       .then((res) => res.json)
       .then((res) => {
-        setName("");
-        setDescription("");
-        setLattitude("");
-        setLongitude("");
+        setTitle("");
+        setUrl("");
         setType("");
+        setLocationId("");
       });
   };
 
@@ -49,8 +46,8 @@ export default function AddLocation() {
     <>
       <div className="header_text_location">
         <p>
-          What about adding the location where your photo was taken? <br /> Here
-          you have this possibility!
+          What about adding the new photos you have just taken? <br /> Here you
+          have this possibility!
         </p>
       </div>
 
@@ -59,34 +56,28 @@ export default function AddLocation() {
           <div className="form_inputs">
             <form onSubmit={handleSubmit}>
               <input
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setTitle(e.target.value)}
                 type="text"
-                placeholder="name"
-                value={name}
+                placeholder="title"
+                value={title}
               ></input>
               <input
-                onChange={(e) => setDescription(e.target.value)}
+                onChange={(e) => setUrl(e.target.value)}
                 type="text"
-                placeholder="description"
-                value={description}
-              ></input>
-              <input
-                onChange={(e) => setLattitude(e.target.value)}
-                type="text"
-                placeholder="lattitude"
-                value={lattitude}
-              ></input>
-              <input
-                onChange={(e) => setLongitude(e.target.value)}
-                type="text"
-                placeholder="longitude"
-                value={longitude}
+                placeholder="url"
+                value={url}
               ></input>
               <input
                 onChange={(e) => setType(e.target.value)}
                 type="text"
-                placeholder="photo type"
+                placeholder="Type"
                 value={type}
+              ></input>
+              <input
+                onChange={(e) => setLocationId(e.target.value)}
+                type="text"
+                placeholder="locationId"
+                value={locationId}
               ></input>
               <div className="location_button">
                 <UploadButton />
