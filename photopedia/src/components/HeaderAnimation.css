@@ -33,6 +33,7 @@ body {
   display: flex;
   /* justify-content: flex-end; */
   margin-top: 10px;
+  margin-left: 0;
 }
 
 @media (max-width: 800px) {

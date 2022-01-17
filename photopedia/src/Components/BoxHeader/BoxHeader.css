@@ -9,6 +9,18 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 746px) {
+  .animation {
+    display: flex;
+    align-self: flex-end;
+    /* justify-content: flex-end; */
+    /* flex-direction: column; */
+    margin-bottom: 5px;
+    
+  }
+}
+
 /*
     .left_content img {
       width: 257px;
