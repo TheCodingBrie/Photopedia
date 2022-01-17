@@ -7,13 +7,13 @@ import LogoPhotopedia from "./components/LogoPhotopedia";
 // take away this line when the router is done
 // import GalleryWithDescription from './components/GalleryWithDescription';
 // import Gallery from './components/Gallery';
-import Locations from './components/Locations';
 
 function App() {
   return (
     <div className="App">
       <LogoPhotopedia className="Ph-Logo" />
       <Sidebar />
+
       <div className="full-container">
         <div className="menu-space"></div>
         <div className="content-space">
@@ -21,11 +21,10 @@ function App() {
         </div>
         <SocialMedia />
       </div>
+      
+      <Outlet />
+      <SocialMedia />
 
-      {/* take away these lines when the router is done */}
-      {/* <GalleryWithDescription /> 
-      <Gallery /> */}
-      {/* <Locations /> */}
     </div>
 
     
