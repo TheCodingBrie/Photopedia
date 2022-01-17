@@ -10,13 +10,8 @@ function App() {
     <div className="App">
       <LogoPhotopedia className="Ph-Logo" />
       <Sidebar />
-      <div className="full-container">
-        <div className="menu-space"></div>
-        <div className="content-space">
-          <Outlet />
-        </div>
-        <SocialMedia />
-      </div>
+      <Outlet />
+      <SocialMedia />
     </div>
   );
 }
