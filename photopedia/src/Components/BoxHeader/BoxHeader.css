@@ -1,0 +1,95 @@
+.logo_photopedia {
+  position: fixed;
+  top: 50px;
+  left: 57px;
+}
+
+.left_content > .animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 746px) {
+  .animation {
+    display: flex;
+    align-self: flex-end;
+    /* justify-content: flex-end; */
+    /* flex-direction: column; */
+    margin-bottom: 5px;
+    
+  }
+}
+
+/*
+    .left_content img {
+      width: 257px;
+      height: 150px;
+      margin-top: 10px;
+    }
+    
+    .right_content .search {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       margin-left: 145px;   
+    }  */
+/* margin-bottom: 10px; */
+
+/*------------------------------------ KATE ----------------------------------------*/
+
+.left_content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.BC-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.BC-header > .search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-left: 145px;---------------------------------------------*/
+  padding-bottom: 3rem; /* */
+}
+
+@media (max-width: 810px) {
+  .left_content {
+    display: block;
+  }
+  .BC-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .BC-header > .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem; /* */
+  }
+}
+
+@media (max-width: 800px) {
+  .left_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  .BC-header > .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem; /* */
+  }
+}

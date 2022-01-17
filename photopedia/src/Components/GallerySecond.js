@@ -1,28 +1,29 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Photo1 from "./../images/Westhavelland.png";
-import Photo2 from "./../images/Rhön.png";
-import Photo3 from "./../images/Eifel.png";
-import Photo4 from "./../images/Winkl_Moosalm.png";
-import Photo5 from "./../images/Sankt_Andreasberg.png";
-import "./GalleryWithDescription.css";
-// import Sidebar from "./Sidebar/Sidebar";
+import * as React from "react"
+import PropTypes from "prop-types"
+import Tabs from "@mui/material/Tabs"
+import Tab from "@mui/material/Tab"
+import Typography from "@mui/material/Typography"
+import Box from "@mui/material/Box"
+import Photo1 from "./../images/Westhavelland.png"
+import Photo2 from "./../images/Rhön.png"
+import Photo3 from "./../images/Eifel.png"
+import Photo4 from "./../images/Winkl_Moosalm.png"
+import Photo5 from "./../images/Sankt_Andreasberg.png"
+import "./GallerySecond.css"
+import Sidebar from "./Sidebar/Sidebar"
 // import SearchBar from "./SearchBar";
-import Line from "./../images/line.png";
-import GalleryButton from "./../components/GalleryButton";
-import SocialMedia from "./SocialMedia/SocialMedia";
-import ReturnButton from "./ReturnButton";
-import "./ReturnButton.css";
+import Line from "./../images/line.png"
+import GalleryButton from "./../Components/GalleryButton"
+//import SocialMedia from "./SocialMedia/SocialMedia"
+//import ReturnButton from "./ReturnButton"
+import "./ReturnButton.css"
+import SearchbarHeader from "./SearchbarHeader/SearchbarHeader"
 
 // import LocationButton from './../components/LocationButton';
 // import PhotoDescriptions from './../components/Descriptions';
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+  const { children, value, index, ...other } = props
 
   return (
     <div
@@ -38,40 +39,40 @@ function TabPanel(props) {
         </Box>
       )}
     </div>
-  );
+  )
 }
 
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
-};
+}
 
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
     "aria-controls": `vertical-tabpanel-${index}`,
-  };
+  }
 }
 
 export default function VerticalTabs() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(0)
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+    setValue(newValue)
+  }
 
   const backgroundStyles = {
     backgroundColor: "#FFFFFF",
     opacity: 0.5,
-    width: 516,
-    height: 542,
+    //width: 516,
+    //height: 542,
     borderRadius: 5,
-  };
+  }
 
   const tabStyles = {
     fontFamily: "Perpetua Titling MT Light",
-  };
+  }
 
   // const photoStyles = {
   //   backgroundRepeat: 'no-repeat',
@@ -81,64 +82,83 @@ export default function VerticalTabs() {
 
   return (
     <>
-      <div className="left_content_gallery">
-        {/* <Sidebar /> */}
-      </div>
-      <div className="right_box">
-        <div
-          className="header_box"
-          style={{
-            textAlign: "center",
-            fontFamily: "Perpetua Titling MT Light",
-          }}
-        >
-          <h2>Astrophotography</h2>
-          <img src={Line} alt="line" width="300px" />
+      <SearchbarHeader />
+      <div className="GWD-mainContent">
+        <Sidebar />
 
+        <div className="right_box">
+          <div className="rb-left">
+            <div
+              className="header_box"
+              style={{
+                textAlign: "center",
+                fontFamily: "Perpetua Titling MT Light",
+              }}
+            >
+              <h5>Astrophotography</h5>
+              <img src={Line} alt="line" width="100px" />
+            </div>
+            <Tabs
+              orientation="vertical"
+              variant="scrollable"
+              value={value}
+              onChange={handleChange}
+              aria-label="Vertical tabs example"
+              sx={{ borderRight: 1, borderColor: "divider" }}
+            >
+              <Tab label="Westhavelland" {...a11yProps(0)} style={tabStyles} />
+              <Tab label="Rhön" {...a11yProps(1)} style={tabStyles} />
+              <Tab
+                label="Eifel Nature Park"
+                {...a11yProps(2)}
+                style={tabStyles}
+              />
+              <Tab label="Winkl-Moosalm" {...a11yProps(3)} style={tabStyles} />
+              <Tab
+                label="Sankt Andreasberg"
+                {...a11yProps(4)}
+                style={tabStyles}
+              />
+            </Tabs>
+          </div>
+          {/* <SearchBar /> 
           <div className="return_button_gallery">
-          <ReturnButton />
-        </div>
-        </div>
-        {/* <SearchBar /> */}
-        
-
-        <Box
-          className="photo_box"
-          sx={{
-            flexGrow: 1,
-            bgcolor: "background.paper",
-            display: "flex",
-            justifyContent: "center",
-            textAlign: "center",
-            height: 224,
-            marginLeft: 40,
-          }}
-          
-        >
-          
-          <Tabs
-            orientation="vertical"
-            variant="scrollable"
-            value={value}
-            onChange={handleChange}
-            aria-label="Vertical tabs example"
-            sx={{ borderRight: 1, borderColor: "divider" }}
+            <ReturnButton />
+          </div> */}
+          {/* <Box
+            className="photo_box"
+            sx={{
+              flexGrow: 1,
+              bgcolor: "background.paper",
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "center",
+              height: 224,
+              marginLeft: 40,
+            }}
           >
-            <Tab label="Westhavelland" {...a11yProps(0)} style={tabStyles} />
-            <Tab label="Rhön" {...a11yProps(1)} style={tabStyles} />
-            <Tab
-              label="Eifel Nature Park"
-              {...a11yProps(2)}
-              style={tabStyles}
-            />
-            <Tab label="Winkl-Moosalm" {...a11yProps(3)} style={tabStyles} />
-            <Tab
-              label="Sankt Andreasberg"
-              {...a11yProps(4)}
-              style={tabStyles}
-            />
-          </Tabs>
-          
+           <Tabs
+              orientation="vertical"
+              variant="scrollable"
+              value={value}
+              onChange={handleChange}
+              aria-label="Vertical tabs example"
+              sx={{ borderRight: 1, borderColor: "divider" }}
+            >
+              <Tab label="Westhavelland" {...a11yProps(0)} style={tabStyles} />
+              <Tab label="Rhön" {...a11yProps(1)} style={tabStyles} />
+              <Tab
+                label="Eifel Nature Park"
+                {...a11yProps(2)}
+                style={tabStyles}
+              />
+              <Tab label="Winkl-Moosalm" {...a11yProps(3)} style={tabStyles} />
+              <Tab
+                label="Sankt Andreasberg"
+                {...a11yProps(4)}
+                style={tabStyles}
+              />
+           </Tabs> */}
 
           <div className="photo_box">
             <TabPanel value={value} index={0}>
@@ -147,36 +167,33 @@ export default function VerticalTabs() {
                 style={{
                   backgroundImage: `url(${Photo1})`,
                   backgroundRepeat: "no-repeat",
-                  width: 1032,
-                  height: 542,
                 }}
               >
                 <div
                   className="background_photo_description"
                   style={backgroundStyles}
                 >
-                  <div className="background_photo_description">
-                    <h4>Westhavelland</h4>
-                    <p>
-                      In sparsely populated Westhavelland, around 70 kilometres
-                      to the west of Berlin, you can even find one of the
-                      darkest spots in the whole country. Amateur astronomers
-                      are ideally catered for here, with guided tours and
-                      photography courses as well as astro-friendly
-                      accommodation with binoculars and telescopes. And the
-                      sights you can spot on clear nights are amazing. As well
-                      being able to see the Milky Way with the naked eye,
-                      there's also a chance to observe the airglow, faint light
-                      from higher atmospheric layers. The US non-governmental
-                      organisation International Dark Sky Association (IDA)
-                      designated Westhavelland Nature Park as Germany's first
-                      Dark Sky Reserve in 2014. The darkest point is in the core
-                      area between the small towns of Gülpe and Nennhausen.
-                      Visitors can seek out nine marked observation points and
-                      from there view thousands of stars and planets, and with a
-                      little luck, perhaps some shooting stars and comets too.
-                    </p>
-                  </div>
+                  <h4>Westhavelland</h4>
+                  <p>
+                    In sparsely populated Westhavelland, around 70 kilometres to
+                    the west of Berlin, you can even find one of the darkest
+                    spots in the whole country. Amateur astronomers are ideally
+                    catered for here, with guided tours and photography courses
+                    as well as astro-friendly accommodation with binoculars and
+                    telescopes. And the sights you can spot on clear nights are
+                    amazing. As well being able to see the Milky Way with the
+                    naked eye, there's also a chance to observe the airglow,
+                    faint light from higher atmospheric layers. The US
+                    non-governmental organisation International Dark Sky
+                    Association (IDA) designated Westhavelland Nature Park as
+                    Germany's first Dark Sky Reserve in 2014. The darkest point
+                    is in the core area between the small towns of Gülpe and
+                    Nennhausen. Visitors can seek out nine marked observation
+                    points and from there view thousands of stars and planets,
+                    and with a little luck, perhaps some shooting stars and
+                    comets too.
+                  </p>
+
                   <div className="gallery_button">
                     <GalleryButton />
                   </div>
@@ -189,31 +206,27 @@ export default function VerticalTabs() {
                 style={{
                   backgroundImage: `url(${Photo2})`,
                   backgroundRepeat: "no-repeat",
-                  width: 1032,
-                  height: 542,
                 }}
               >
                 <div
                   className="background_photo_description"
                   style={backgroundStyles}
                 >
-                  <div className="background_photo_description">
-                    <h4>The Rhön Dark Sky Reserve</h4>
-                    <p>
-                      Around the world, the IDA has recognised around 40 regions
-                      in which artificial light has been eliminated to a great
-                      extent and the dark night sky is protected. As well as
-                      focusing on attractions for tourists, the organisation
-                      also has an educational role. It works to disseminate
-                      astronomical knowledge, raise awareness of the night sky
-                      as a cultural asset and inform people of the consequences
-                      of light smog. This phenomenon can irritate nocturnal
-                      animals and birds or disrupt plants' growth cycles. A
-                      transition between light and dark is an important time
-                      mechanism for ecosystems and for us humans too. htyears
-                      away.
-                    </p>
-                  </div>
+                  <h4>The Rhön Dark Sky Reserve</h4>
+                  <p>
+                    Around the world, the IDA has recognised around 40 regions
+                    in which artificial light has been eliminated to a great
+                    extent and the dark night sky is protected. As well as
+                    focusing on attractions for tourists, the organisation also
+                    has an educational role. It works to disseminate
+                    astronomical knowledge, raise awareness of the night sky as
+                    a cultural asset and inform people of the consequences of
+                    light smog. This phenomenon can irritate nocturnal animals
+                    and birds or disrupt plants' growth cycles. A transition
+                    between light and dark is an important time mechanism for
+                    ecosystems and for us humans too. htyears away.
+                  </p>
+
                   <div className="gallery_button">
                     <GalleryButton />
                   </div>
@@ -227,7 +240,6 @@ export default function VerticalTabs() {
                   backgroundImage: `url(${Photo3})`,
                   backgroundRepeat: "no-repeat",
                   width: 1032,
-                  height: 542,
                 }}
               >
                 <div
@@ -271,7 +283,6 @@ export default function VerticalTabs() {
                   backgroundImage: `url(${Photo4})`,
                   backgroundRepeat: "no-repeat",
                   width: 1032,
-                  height: 542,
                 }}
               >
                 <div
@@ -308,7 +319,6 @@ export default function VerticalTabs() {
                   backgroundImage: `url(${Photo5})`,
                   backgroundRepeat: "no-repeat",
                   width: 1032,
-                  height: 542,
                 }}
               >
                 <div
@@ -341,16 +351,32 @@ export default function VerticalTabs() {
                 </div>
               </div>
             </TabPanel>
-            
           </div>
-          
-          
-        </Box>
-        
-      </div>
-      <div className="social_media">
-         <SocialMedia />
+          {/* </Box> */}
+        </div>
       </div>
     </>
-  );
+  )
 }
+
+/*
+ const backgroundStyles = {
+    backgroundColor: "#FFFFFF",
+    opacity: 0.5,
+    width: 516,
+    height: 542,
+    borderRadius: 5,
+  }
+
+
+<TabPanel value={value} index={0}>
+              <div
+                className="background_photo"
+                style={{
+                  backgroundImage: `url(${Photo1})`,
+                  backgroundRepeat: "no-repeat",
+                  width: 1032,
+                  height: 500,
+                }}
+
+                */

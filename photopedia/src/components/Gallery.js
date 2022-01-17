@@ -41,16 +41,19 @@ function Gallery() {
     <div className="left_content_gallery">
       <Sidebar />
     </div>
-    <div className="return">
-        <a href="/">
-          <ReturnButton />
-        </a>
-    </div>
+    
     <div className="photo_gallery">
+    
       
       <div style={{ textAlign: "center", fontFamily:"Perpetua Titling MT Light" }}>
         <h2>Westhavelland</h2>
         <img src={Line} alt='line' width="200px" />
+
+        <div className="return">
+          <a href="/">
+            <ReturnButton />
+          </a>
+        </div>
         
         <div className="photo_gallery_container"
         style={{
@@ -58,7 +61,7 @@ function Gallery() {
         }}>
           <Carousel
             data={data}
-            time={2000}
+            time={2500}
             width="1000px"
             height="650px"
             captionStyle={captionStyle}
@@ -70,7 +73,7 @@ function Gallery() {
             dots={true}
             pauseIconColor="white"
             pauseIconSize="40px"
-            slideBackgroundColor="darkgrey"
+            slideBackgroundColor="whitesmoke"
             slideImageFit="cover"
             thumbnails={true}
             thumbnailWidth="200px"
@@ -83,7 +86,7 @@ function Gallery() {
           />
         </div>
       </div>
-      <div className="social_media">
+      <div className="gallery_social_media">
         <SocialMedia />
       </div>
       

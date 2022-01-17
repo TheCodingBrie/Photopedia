@@ -1,37 +1,33 @@
 import React from "react";
 import "./App.css";
-// import CardsHome from "./CardsHome";
-// import SearchBar from "./SearchBar";
-import './Home.css';
-import LandingPage from "./components/LandingPage/LandingPage"
-import Home from "./Home"
-import BoxComponent from "./BoxComponent";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Sidebar from "./components/Sidebar/Sidebar";
-import PhotoGallery from "./PhotoGallery";
+import { Outlet } from "react-router-dom";
+import LogoPhotopedia from "./components/LogoPhotopedia";
+// take away this line when the router is done
 import GalleryWithDescription from './components/GalleryWithDescription';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
     <div className="App">
-      <div className="search_and_cards"></div>
-      <LandingPage />
-      <Home /> 
+      <LogoPhotopedia className="Ph-Logo" />
       <Sidebar />
-      <BoxComponent /> 
-      <SocialMedia />
+      <div className="full-container">
+        <div className="menu-space"></div>
+        <div className="content-space">
+          <Outlet />
+        </div>
+        {/* <SocialMedia /> */}
+      </div>
 
-      {/* take away PHOTOGALERY from here when the router is ready */}
-      <PhotoGallery /> 
-      
-      <GalleryWithDescription />
+      {/* take away these lines when the router is done */}
+      <GalleryWithDescription /> 
+      <Gallery />
     </div>
-  )
+
+    
+  );
 }
 
-export default App
-
-/*
-
-<LandingPage />
-*/
+export default App;

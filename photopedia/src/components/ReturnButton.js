@@ -1,7 +1,8 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
-import Stack from '@mui/material/Stack';
+import * as React from "react"
+import Button from "@mui/material/Button"
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn"
+import Stack from "@mui/material/Stack"
+import "./ReturnButton.css"
 
 export default function ReturnButton() {
   return (
@@ -10,13 +11,7 @@ export default function ReturnButton() {
         <Button variant="outlined" startIcon={<KeyboardReturnIcon />}>
           Return
         </Button>
-        
       </Stack>
     </div>
-  );
+  )
 }
-
-
-
-
-

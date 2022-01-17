@@ -1,10 +1,11 @@
-import React from "react"
-import "./LandingPage.css"
+import React from "react";
+import "./LandingPage.css";
+import { NavLink } from "react-router-dom";
 
 export default function LandingPage() {
   return (
     <section className="LandingPage">
-      <a href="/">
+      <NavLink to="/photopedia/home">
         <img
           className="LandingImage"
           src={
@@ -12,7 +13,7 @@ export default function LandingPage() {
           }
           alt="Landing"
         />
-      </a>
+      </NavLink>
     </section>
-  )
+  );
 }

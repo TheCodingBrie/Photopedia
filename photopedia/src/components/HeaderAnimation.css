@@ -10,14 +10,16 @@ body {
   height: 100vh;
   /* display: flex; */
   /* flex-direction: row; 
-  justify-content: flex-end;
+  
   /* align-items: center;
   align-content: center; */
+  justify-content: center;
   flex-wrap: wrap;
   background: #eeeef5;
 }
 
 .where_to {
+  margin-left: 0;
   font-size: 4vw;
   line-height: 8vw;
   font-family: "Perpetua Titling MT Light", sans-serif;
