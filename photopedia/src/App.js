@@ -7,6 +7,7 @@ import LogoPhotopedia from "./components/LogoPhotopedia";
 // take away this line when the router is done
 // import GalleryWithDescription from './components/GalleryWithDescription';
 // import Gallery from './components/Gallery';
+import AddLocations from './components/AddLocations';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
         <SocialMedia />
       </div>
       
-      <Outlet />
-      <SocialMedia />
+      {/* <Outlet />
+      <SocialMedia /> */}
+      <AddLocations />
 
     </div>
 
