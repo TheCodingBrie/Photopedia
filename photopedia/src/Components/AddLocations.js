@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import "./AddLocations.css";
-import UploadButton from "../components/UploadButton";
+import React, { useState } from "react"
+import "./AddLocations.css"
+import UploadButton from "../Components/UploadButton"
 
-const fetchUrl = "https://photopedia-server.herokuapp.com/api/locations";
+const fetchUrl = "https://photopedia-server.herokuapp.com/api/locations"
 
 export default function AddLocation() {
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-  const [lattitude, setLattitude] = useState("");
-  const [longitude, setLongitude] = useState("");
-  const [type, setType] = useState("");
+  const [name, setName] = useState("")
+  const [description, setDescription] = useState("")
+  const [lattitude, setLattitude] = useState("")
+  const [longitude, setLongitude] = useState("")
+  const [type, setType] = useState("")
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     // What are those doing? are they important?
     // headers : {
@@ -37,13 +37,13 @@ export default function AddLocation() {
     })
       .then((res) => res.json)
       .then((res) => {
-        setName("");
-        setDescription("");
-        setLattitude("");
-        setLongitude("");
-        setType("");
-      });
-  };
+        setName("")
+        setDescription("")
+        setLattitude("")
+        setLongitude("")
+        setType("")
+      })
+  }
 
   return (
     <>
@@ -97,5 +97,5 @@ export default function AddLocation() {
         </div>
       </div>
     </>
-  );
+  )
 }

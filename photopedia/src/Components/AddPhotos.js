@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import "./AddLocations.css";
-import UploadButton from "../components/UploadButton";
+import React, { useState } from "react"
+import "./AddLocations.css"
+import UploadButton from "../Components/UploadButton"
 
-const fetchUrl = "https://photopedia-server.herokuapp.com/api/photos";
+const fetchUrl = "https://photopedia-server.herokuapp.com/api/photos"
 
 export default function AddPhoto() {
-  const [title, setTitle] = useState("");
-  const [url, setUrl] = useState("");
-  const [type, setType] = useState("");
-  const [locationId, setLocationId] = useState("");
+  const [title, setTitle] = useState("")
+  const [url, setUrl] = useState("")
+  const [type, setType] = useState("")
+  const [locationId, setLocationId] = useState("")
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     // What are those doing? are they important?
     // headers : {
@@ -35,12 +35,12 @@ export default function AddPhoto() {
     })
       .then((res) => res.json)
       .then((res) => {
-        setTitle("");
-        setUrl("");
-        setType("");
-        setLocationId("");
-      });
-  };
+        setTitle("")
+        setUrl("")
+        setType("")
+        setLocationId("")
+      })
+  }
 
   return (
     <>
@@ -88,5 +88,5 @@ export default function AddPhoto() {
         </div>
       </div>
     </>
-  );
+  )
 }

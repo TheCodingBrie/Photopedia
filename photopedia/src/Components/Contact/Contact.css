@@ -1,6 +1,5 @@
-            CONTACT                
-
-.BC-mainContent {
+/* ----------------------------------------  CONTACT   ------------------------------------*/
+.C-mainContent {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -18,6 +17,13 @@
   -webkit-text-size-adjust: 100%;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
+}
+.contact-container {
+  background-image: url(../Images/graffiti.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
 }
 .contact-container:before,
 .contact-container:after {
@@ -35,22 +41,27 @@
   font-weight: bold;
   padding: 1rem;
   line-height: 1.42857143;
-  color: #333;
+  color: #fff;
+  opacity: 0.9;
 }
 
 .contact-form {
   margin-top: 0em;
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 
 .Cform-control {
   border: 0;
   border-bottom: 1px solid #212121;
-  background-color: transparent;
+  background-color: #fff;
   width: 100%;
   height: 34px;
   padding: 6px 0;
+  opacity: 0.7;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 .c-message {
   padding: 2rem;
@@ -68,10 +79,22 @@
     padding-bottom: 60px;
   }
 
-  .BC-mainContent {
+  .C-mainContent {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+}
+/*---------------------------------------------------------------------*/
+.BigBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.NavBox {
+  width: 380px;
+}
+.RightSide {
+  width: 100%;
 }
