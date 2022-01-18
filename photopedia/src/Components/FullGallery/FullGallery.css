@@ -1,7 +1,7 @@
 .full-gallery-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 20vh 20vw 0 20vw
+    margin: 20vh 15vw 0 20vw
 }
 
 .image-box {
