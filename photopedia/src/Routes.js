@@ -8,6 +8,8 @@ import Contact from "./components/Contact/Contact";
 import Locations from "./components/Locations/Locations";
 import AddLocations from "./components/AddLocations";
 import AddPhotos from "./components/AddPhotos";
+import PhotoGallery from "./PhotoGallery";
+import FullGallery from "./components/FullGallery/FullGallery";
 
 export default function photopediaRoutes() {
   return (
@@ -17,10 +19,11 @@ export default function photopediaRoutes() {
         <Route path="home" element={<BoxComponent />}></Route>
         <Route path=":type" element={<GalleryWithDescription />}></Route>
         <Route path="locations" element={<Locations />}></Route>
-        {/* <Route path="about" element={}></Route>*/}
+        <Route path="gallery" element={<PhotoGallery />}></Route>
         <Route path="newphoto" element={<AddPhotos />}></Route>
         <Route path="newlocation" element={<AddLocations />}></Route>
         <Route path="contact" element={<Contact />}></Route>
+        <Route path="explore" element={<FullGallery />}></Route>
       </Route>
     </Routes>
   );

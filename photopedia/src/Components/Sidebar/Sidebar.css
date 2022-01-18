@@ -4,6 +4,9 @@
 } 
 */
 
+.active {
+  background-color: white !important;
+}
 
 .Sidebar {
   position: fixed;

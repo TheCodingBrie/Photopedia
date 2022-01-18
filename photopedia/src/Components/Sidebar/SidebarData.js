@@ -1,10 +1,10 @@
 import React from "react";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import PhotoCameraOutlinedIcon from "@mui/icons-material/PhotoCameraOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import AddLocationOutlinedIcon from "@mui/icons-material/AddLocationOutlined";
+import PhotoSizeSelectActualOutlinedIcon from "@mui/icons-material/PhotoSizeSelectActualOutlined";
 
 export const SidebarData = [
   {
@@ -41,6 +41,12 @@ export const SidebarData = [
     title: "CONTACT",
     path: "/photopedia/contact",
     icon: <ContactsOutlinedIcon />,
+    cName: "nav-text",
+  },
+  {
+    title: "EXPLORE",
+    path: "/photopedia/explore",
+    icon: <PhotoSizeSelectActualOutlinedIcon />,
     cName: "nav-text",
   },
 ];

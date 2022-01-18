@@ -4,6 +4,10 @@ body {
   font-family: "Perpetua Titling MT Light";
 }
 
+.no-decoration {
+  text-decoration: none;
+}
+
 /* .right_box {
   display: flex;
   flex-direction: column;
@@ -17,14 +21,14 @@ body {
   border-radius: 5px;
   margin-left: 10px;
   margin-right: 10px;
-  
+  height: 50vh;
 }
 
 @media (min-width: 960px) {
     .photo_box {
       display: flex;
       justify-content: center;
-    
+      
     }
   }
   

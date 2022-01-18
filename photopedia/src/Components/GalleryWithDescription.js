@@ -17,7 +17,7 @@ import GalleryButton from "./../components/GalleryButton";
 import ReturnButton from "./ReturnButton";
 import "./ReturnButton.css";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 // import LocationButton from './../components/LocationButton';
 // import PhotoDescriptions from './../components/Descriptions';
@@ -215,7 +215,9 @@ export default function VerticalTabs() {
                     </p>
                   </div>
                   <div className="gallery_button">
-                    <GalleryButton />
+                    <NavLink className="no-decoration" to="../Gallery">
+                      <GalleryButton />
+                    </NavLink>
                   </div>
                 </div>
               </div>
