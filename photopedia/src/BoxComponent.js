@@ -1,12 +1,12 @@
-import * as React from "react"
-import Box from "@mui/material/Box"
-import Astrophoto from "./images/astrophotography_300X400.png"
-import Landscape from "./images/landscape_300X400.png"
-import Architecture from "./images/architecture_300X400.png"
-import Wildlife from "./images/wildlife_300X400.png"
-import "./Home.css"
-import BoxHeader from "./Components/BoxHeader/BoxHeader"
-import { NavLink } from "react-router-dom"
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Astrophoto from "./images/astrophotography_300X400.png";
+import Landscape from "./images/landscape_300X400.png";
+import Architecture from "./images/architecture_300X400.png";
+import Wildlife from "./images/wildlife_300X400.png";
+import "./Home.css";
+import BoxHeader from "./components/BoxHeader/BoxHeader";
+import { NavLink } from "react-router-dom";
 
 function BoxComponent() {
   return (
@@ -93,6 +93,6 @@ function BoxComponent() {
         </div>
       </div>
     </>
-  )
+  );
 }
-export default BoxComponent
+export default BoxComponent;

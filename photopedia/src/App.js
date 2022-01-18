@@ -1,9 +1,9 @@
-import React from "react"
-import "./App.css"
-import SocialMedia from "./Components/SocialMedia/SocialMedia"
-import Sidebar from "./Components/Sidebar/Sidebar"
-import { Outlet } from "react-router-dom"
-import LogoPhotopedia from "./Components/LogoPhotopedia"
+import React from "react";
+import "./App.css";
+import SocialMedia from "./components/SocialMedia/SocialMedia";
+import Sidebar from "./components/Sidebar/Sidebar";
+import { Outlet } from "react-router-dom";
+import LogoPhotopedia from "./components/LogoPhotopedia";
 // take away this line when the router is done
 // import GalleryWithDescription from './components/GalleryWithDescription';
 // import Gallery from './components/Gallery';
@@ -25,7 +25,7 @@ function App() {
       {/* <Outlet />
       <SocialMedia /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
