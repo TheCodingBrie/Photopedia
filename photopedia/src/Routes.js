@@ -14,7 +14,7 @@ import FullGallery from "./components/FullGallery/FullGallery";
 export default function photopediaRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />}></Route>
+      <Route path="photopedia" element={<LandingPage />}></Route>
       <Route path="photopedia" element={<App />}>
         <Route path="home" element={<BoxComponent />}></Route>
         <Route path=":type" element={<GalleryWithDescription />}></Route>

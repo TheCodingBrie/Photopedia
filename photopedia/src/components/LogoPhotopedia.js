@@ -7,7 +7,7 @@ function LogoPhotopedia() {
     <div className="container_main_content">
       <div className="left_content">
         <div className="logo_photopedia">
-          <NavLink to="../">
+          <NavLink to="/photopedia">
             <img src={Logo} alt="Photopedia logo" />
           </NavLink>
         </div>
