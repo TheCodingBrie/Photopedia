@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Photopedia/static/css/main.93239220.css",
-    "main.js": "/Photopedia/static/js/main.567935eb.js",
-    "static/media/Rhön.png": "/Photopedia/static/media/Rhön.509e2640f2edff9e69d1.png",
-    "static/media/Eifel.png": "/Photopedia/static/media/Eifel.41148cacc552ba75057c.png",
-    "static/media/Winkl_Moosalm.png": "/Photopedia/static/media/Winkl_Moosalm.25b746a9a9a5d927996f.png",
-    "static/media/Westhavelland.png": "/Photopedia/static/media/Westhavelland.ec7f55c04df01a9dfe99.png",
-    "static/media/graffiti.jpg": "/Photopedia/static/media/graffiti.8fcd748e8d1a6bc24c37.jpg",
-    "static/media/Sankt_Andreasberg.png": "/Photopedia/static/media/Sankt_Andreasberg.4c35b607e2c16a423bb0.png",
-    "static/media/landscape_300X400.png": "/Photopedia/static/media/landscape_300X400.79487c0c5547c4944356.png",
-    "static/media/architecture_300X400.png": "/Photopedia/static/media/architecture_300X400.452932f4e0166f8f1548.png",
-    "static/media/wildlife_300X400.png": "/Photopedia/static/media/wildlife_300X400.6442616cd79cf803ed51.png",
-    "static/media/astrophotography_300X400.png": "/Photopedia/static/media/astrophotography_300X400.6e24332e64d4b2316979.png",
-    "static/media/Westhavelland_2.jpg": "/Photopedia/static/media/Westhavelland_2.24fa814630dd7d4a0ed2.jpg",
-    "static/media/add_locations_640x640.jpg": "/Photopedia/static/media/add_locations_640x640.3c72b2f678ec8061609b.jpg",
-    "static/media/line.png": "/Photopedia/static/media/line.f8e23f3e4b5887ac0be3.png",
-    "static/media/photopedia_logo_transparent.png": "/Photopedia/static/media/photopedia_logo_transparent.6bb6b296890e641bc512.png",
-    "index.html": "/Photopedia/index.html",
-    "main.93239220.css.map": "/Photopedia/static/css/main.93239220.css.map",
-    "main.567935eb.js.map": "/Photopedia/static/js/main.567935eb.js.map"
+    "main.css": "/photopedia/static/css/main.96273fd9.css",
+    "main.js": "/photopedia/static/js/main.a697ba96.js",
+    "static/media/Rhön.png": "/photopedia/static/media/Rhön.509e2640f2edff9e69d1.png",
+    "static/media/Eifel.png": "/photopedia/static/media/Eifel.41148cacc552ba75057c.png",
+    "static/media/Winkl_Moosalm.png": "/photopedia/static/media/Winkl_Moosalm.25b746a9a9a5d927996f.png",
+    "static/media/Westhavelland.png": "/photopedia/static/media/Westhavelland.ec7f55c04df01a9dfe99.png",
+    "static/media/graffiti.jpg": "/photopedia/static/media/graffiti.8fcd748e8d1a6bc24c37.jpg",
+    "static/media/Sankt_Andreasberg.png": "/photopedia/static/media/Sankt_Andreasberg.4c35b607e2c16a423bb0.png",
+    "static/media/landscape_300X400.png": "/photopedia/static/media/landscape_300X400.79487c0c5547c4944356.png",
+    "static/media/architecture_300X400.png": "/photopedia/static/media/architecture_300X400.452932f4e0166f8f1548.png",
+    "static/media/wildlife_300X400.png": "/photopedia/static/media/wildlife_300X400.6442616cd79cf803ed51.png",
+    "static/media/astrophotography_300X400.png": "/photopedia/static/media/astrophotography_300X400.6e24332e64d4b2316979.png",
+    "static/media/Westhavelland_2.jpg": "/photopedia/static/media/Westhavelland_2.24fa814630dd7d4a0ed2.jpg",
+    "static/media/add_locations_640x640.jpg": "/photopedia/static/media/add_locations_640x640.3c72b2f678ec8061609b.jpg",
+    "static/media/line.png": "/photopedia/static/media/line.f8e23f3e4b5887ac0be3.png",
+    "static/media/photopedia_logo_transparent.png": "/photopedia/static/media/photopedia_logo_transparent.6bb6b296890e641bc512.png",
+    "index.html": "/photopedia/index.html",
+    "main.96273fd9.css.map": "/photopedia/static/css/main.96273fd9.css.map",
+    "main.a697ba96.js.map": "/photopedia/static/js/main.a697ba96.js.map"
   },
   "entrypoints": [
-    "static/css/main.93239220.css",
-    "static/js/main.567935eb.js"
+    "static/css/main.96273fd9.css",
+    "static/js/main.a697ba96.js"
   ]
 }
