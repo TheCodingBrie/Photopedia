@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/photopedia/static/css/main.96273fd9.css",
-    "main.js": "/photopedia/static/js/main.a697ba96.js",
+    "main.js": "/photopedia/static/js/main.e341c237.js",
     "static/media/Rhön.png": "/photopedia/static/media/Rhön.509e2640f2edff9e69d1.png",
     "static/media/Eifel.png": "/photopedia/static/media/Eifel.41148cacc552ba75057c.png",
     "static/media/Winkl_Moosalm.png": "/photopedia/static/media/Winkl_Moosalm.25b746a9a9a5d927996f.png",
@@ -18,10 +18,10 @@
     "static/media/photopedia_logo_transparent.png": "/photopedia/static/media/photopedia_logo_transparent.6bb6b296890e641bc512.png",
     "index.html": "/photopedia/index.html",
     "main.96273fd9.css.map": "/photopedia/static/css/main.96273fd9.css.map",
-    "main.a697ba96.js.map": "/photopedia/static/js/main.a697ba96.js.map"
+    "main.e341c237.js.map": "/photopedia/static/js/main.e341c237.js.map"
   },
   "entrypoints": [
     "static/css/main.96273fd9.css",
-    "static/js/main.a697ba96.js"
+    "static/js/main.e341c237.js"
   ]
 }
